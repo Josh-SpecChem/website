@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="noindex" />
+
+  <!-- Title -->
+  <title>Product Videos</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="./node_modules/tom-select/dist/css/tom-select.bootstrap5.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar/double-header.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+
+  <div class="content-space-2 px-7">
+    <div class="row">
+
+      <div class="col-md-3">
+        <!-- Navbar -->
+      <div class="navbar-expand-lg">
+        <!-- Navbar Toggle -->
+        <div class="d-grid">
+          <button type="button" class="navbar-toggler btn btn-white mb-3" data-bs-toggle="collapse" data-bs-target="#navbarVerticalNavMenuEg3" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarVerticalNavMenuEg3">
+            <span class="d-flex justify-content-between align-items-center">
+              <span class="text-dark">Menu</span>
+
+              <span class="navbar-toggler-default">
+                <i class="bi-list"></i>
+              </span>
+
+              <span class="navbar-toggler-toggled">
+                <i class="bi-x"></i>
+              </span>
+            </span>
+          </button>
+        </div>
+        <!-- End Navbar Toggle -->
+
+        <!-- Navbar Collapse -->
+        <div id="navbarVerticalNavMenuEg3" class="collapse navbar-collapse">
+          <div id="shopNavCategories" class="nav nav-pills nav-vertical">
+            <!-- Collapse -->
+            <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesTwo" aria-expanded="false" aria-controls="shopCategoriesTwo">
+              <i class="bi-tv nav-icon"></i> Product Category 1
+            </a>
+
+            <div id="shopCategoriesTwo" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
+              <div id="shopNavCategoriesTwo">
+                <!-- Collapse -->
+                <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesTwoSubOne" aria-expanded="false" aria-controls="shopCategoriesTwoSubOne">
+                  TV & video devices
+                </a>
+
+                <div id="shopCategoriesTwoSubOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesTwo">
+                  <a class="nav-link" href="#">Accessories</a>
+                  <a class="nav-link" href="#">Kitchen</a>
+                  <a class="nav-link" href="#">Living room</a>
+                </div>
+                <!-- End Collapse -->
+
+                <a class="nav-link" href="#">Cooling & air treatment</a>
+                <a class="nav-link" href="#">Vacuums & floor care</a>
+              </div>
+            </div>
+            <!-- End Collapse -->
+
+            <!-- Collapse -->
+            <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesOne" aria-expanded="false" aria-controls="shopCategoriesOne">
+              <i class="bi-display nav-icon"></i> Product Category 2
+            </a>
+
+            <div id="shopCategoriesOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
+              <div id="shopNavCategoriesOne">
+                <!-- Collapse -->
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesOneSubOne" aria-expanded="false" aria-controls="shopCategoriesOneSubOne">
+                  Electronic accessories
+                </a>
+
+                <div id="shopCategoriesOneSubOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesOne">
+                  <a class="nav-link" href="#">Mobile accessories</a>
+                  <a class="nav-link" href="#">Portable audio</a>
+                  <a class="nav-link" href="#">Wearable</a>
+                  <a class="nav-link" href="#">Console accessories</a>
+                  <a class="nav-link" href="#">Camera accessories</a>
+                  <a class="nav-link" href="#">Computer accessories</a>
+                  <a class="nav-link" href="#">Storage</a>
+                  <a class="nav-link" href="#">Printers</a>
+                  <a class="nav-link" href="#">Computer components</a>
+                </div>
+                <!-- End Collapse -->
+
+                <a class="nav-link" href="#">Mobiles</a>
+                <a class="nav-link" href="#">Tablets</a>
+                <a class="nav-link" href="#">Laptops</a>
+                <a class="nav-link" href="#">Desktops</a>
+                <a class="nav-link" href="#">Gaming consoles</a>
+                <a class="nav-link" href="#">Car cameras</a>
+                <a class="nav-link" href="#">Security cameras</a>
+                <a class="nav-link" href="#">Digital cameras</a>
+                <a class="nav-link" href="#">Gadgets</a>
+              </div>
+            </div>
+            <!-- End Collapse -->
+
+            <!-- Collapse -->
+            <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesThree" aria-expanded="false" aria-controls="shopCategoriesThree">
+              <i class="bi-heart nav-icon"></i> Product Category 3
+            </a>
+
+            <div id="shopCategoriesThree" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
+              <div id="shopNavCategoriesThree">
+                <a class="nav-link" href="#">Food supplements</a>
+                <a class="nav-link" href="#">Skincare</a>
+                <a class="nav-link" href="#">Makeup</a>
+
+                <!-- Collapse -->
+                <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesThreeSubOne" aria-expanded="false" aria-controls="shopCategoriesThreeSubOne">
+                  Beauty tools
+                </a>
+
+                <div id="shopCategoriesThreeSubOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesThree">
+                  <a class="nav-link" href="#">Men</a>
+                  <a class="nav-link" href="#">Women</a>
+                </div>
+                <!-- End Collapse -->
+
+                <!-- Collapse -->
+                <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesThreeSubTwo" aria-expanded="false" aria-controls="shopCategoriesThreeSubTwo">
+                  Medical supplies
+                </a>
+
+                <div id="shopCategoriesThreeSubTwo" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesThree">
+                  <a class="nav-link" href="#">Men</a>
+                  <a class="nav-link" href="#">Women</a>
+                </div>
+                <!-- End Collapse -->
+              </div>
+            </div>
+            <!-- End Collapse -->
+
+            <!-- Collapse -->
+            <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesFour" aria-expanded="false" aria-controls="shopCategoriesFour">
+              <i class="bi-piggy-bank nav-icon"></i> Product Category 4
+            </a>
+
+            <div id="shopCategoriesFour" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
+              <div id="shopNavCategoriesFour">
+                <!-- Collapse -->
+                <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesFourSubOne" aria-expanded="false" aria-controls="shopCategoriesFourSubOne">
+                  Foods
+                </a>
+
+                <div id="shopCategoriesFourSubOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesFour">
+                  <a class="nav-link" href="#">Feeding</a>
+                  <a class="nav-link" href="#">Milk formula</a>
+                </div>
+                <!-- End Collapse -->
+
+                <a class="nav-link" href="#">Diapering & potty</a>
+                <a class="nav-link" href="#">Nursery</a>
+                <a class="nav-link" href="#">Baby personal care</a>
+                <a class="nav-link" href="#">Clothing & accessories</a>
+                <a class="nav-link" href="#">Baby and & toys</a>
+              </div>
+            </div>
+            <!-- End Collapse -->
+
+            <!-- Collapse -->
+            <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesFive" aria-expanded="false" aria-controls="shopCategoriesFive">
+              <i class="bi-truck nav-icon"></i> Product Category 5
+            </a>
+
+            <div id="shopCategoriesFive" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
+              <!-- Collapse -->
+              <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesFiveSubOne" aria-expanded="false" aria-controls="shopCategoriesFiveSubOne">
+                Automotive
+              </a>
+
+              <div id="shopCategoriesFiveSubOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesFour">
+                <a class="nav-link" href="#">Services & installations</a>
+                <a class="nav-link" href="#">Auto oils & fluids</a>
+              </div>
+              <!-- End Collapse -->
+
+              <a class="nav-link" href="#">Interior accessories</a>
+              <a class="nav-link" href="#">Exterior accessories</a>
+              <a class="nav-link" href="#">Car audio</a>
+              <a class="nav-link" href="#">Auto care</a>
+              <a class="nav-link" href="#">Riding gear</a>
+            </div>
+            <!-- End Collapse -->
+          </div>
+        </div>
+        <!-- End Navbar Collapse -->
+      </div>
+      <!-- End Navbar -->
+      </div>
+      
+
+      <div class="col-md-3">
+
+        <!-- Crystal Shine Matte Video Block 1 -->
+            <div id="youTubeVideoPlayer1" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="assets/img/thumbnails/yt-crystalshinematte.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "HZp7Bw_W0ww&t=1s",
+                   "parentSelector": "#youTubeVideoPlayer1",
+                   "targetSelector": "#youTubeVideoIframe1",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe1"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>
+          </div>
+        <!-- End Video Block 1 -->
+
+      <div class="col-md-3">
+
+        <!-- Cure & Seal WB Video Block 2 -->
+            <div id="youTubeVideoPlayer2" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="assets/img/thumbnails/yt-cure-and-sealwb.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "9StI1KtR6b0",
+                   "parentSelector": "#youTubeVideoPlayer2",
+                   "targetSelector": "#youTubeVideoIframe2",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe2"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>
+          </div>
+        <!-- End Video Block 2 -->
+
+      <div class="col-md-3">
+
+        <!-- Deco Shine Video Block 3 -->
+            <div id="youTubeVideoPlayer3" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="assets/img/thumbnails/yt-Decoshine.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "RnjxvHA7tlk",
+                   "parentSelector": "#youTubeVideoPlayer3",
+                   "targetSelector": "#youTubeVideoIframe3",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe3"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>
+          </div>
+        <!-- End Video Block 3 -->
+
+</div>
+
+  </div>
+</main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/variant-5.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Log In -->
+  @@include("@@autopath/partials/modal/login.html")
+
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="./node_modules/tom-select/dist/js/tom-select.complete.min.js"></script>
+  <script src="../assets/vendor/hs-video-player/dist/hs-video-player.min.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
+  <script src="../assets/js/hs.tom-select.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+      // INITIALIZATION OF BOOTSTRAP DROPDOWN
+      // =======================================================
+      HSBsDropdown.init()
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+      // INITIALIZATION OF SELECT
+    // =======================================================
+    HSCore.components.HSTomSelect.init('.js-select')
+
+
+    // INITIALIZATION OF VIDEO PLAYER
+    // =======================================================
+    new HSVideoPlayer('.js-inline-video-player')
+
+    // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller')
+    })()
+  </script>
+</body>
+</html>
+
+
