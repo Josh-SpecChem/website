@@ -2,7 +2,7 @@
   <nav class="bg-white js-mega-menu navbar-nav-wrap">
     
     <!-- TopBar Section -->
-    <div class="container-fluid border-bottom py-2">
+    <div class="container-fluid border-bottom justify-content-center">
       <div class="row mx-auto">
         <div class="col-4 text-center">
           <div>
@@ -10,10 +10,10 @@
               <div class="d-none d-md-none d-lg-block mx-auto">
                 <img id="navbar-logo-lg" class="navbar-brand-logo" src="@@autopath/assets/img/specchem/logos/sc_primary.png" alt="Logo">
               </div>
-                <div class="d-none d-md-block d-lg-none">
+                <div class="d-none d-md-block d-lg-none mx-auto">
                   <img id="navbar-logo-md" class="navbar-brand-logo" src="@@autopath/assets/img/specchem/logos/sc_primary.png" alt="Logo">
                 </div>
-                <div class="d-xs-block d-sm-block d-md-none mx-auto">
+                <div class="d-xs-block d-sm-block d-md-none mx-auto pt-3">
                   <img id="navbar-logo-sm" class="navbar-brand-logo pb-3" src="@@autopath/assets/img/specchem/logos/sc_primary.png" alt="Logo">
                 </div>
             </a>
@@ -22,18 +22,19 @@
 
         <div class="col-4 text-center">
           <div class="navbar-nav">
-            <div class="h2 pt-2 d-none d-sm-none d-md-block mx-auto">
+            <div class="h2 d-none d-sm-none d-md-block mx-auto text-nowrap">
               <a class="nav-item link link-dark" href="tel: 816-968-5600">
                 <i class="bi-telephone-inbound-fill me-1"></i> 816-968-5600
               </a>
             </div>
-            <div class="d-xs-block d-sm-block d-md-none mx-auto">
+            <div class="d-xs-block d-sm-block d-md-none mx-auto text-nowrap">
               <a class="nav-item link link-dark" href="tel: 816-968-5600">
                 <i class="bi-telephone-inbound-fill me-1"></i> 816-968-5600
               </a>
             </div>
           </div>
           <!-- Socials -->
+          <div class="d-none d-md-none d-lg-block mx-auto">
             <ul class="sm-icons list-inline">
               <li class="list-inline-item mx-auto">
                 <a class="btn btn-outline-primary btn-xs btn-icon rounded-3" href="#">
@@ -56,6 +57,7 @@
                 </a>
               </li>
             </ul>
+          </div>
           <!-- End Socials -->
         </div>
 
@@ -63,7 +65,7 @@
         <form role="search">
           <!-- Search -->
             <!-- Select -->
-            <div class="tom-select-custom w-80 mx-auto">
+            <div class="tom-select-custom w-100 mx-auto">
               <select class="js-select form-select" autocomplete="off" onchange="location = this.value;"
                       data-hs-tom-select-options='{
                         "searchInDropdown": true,

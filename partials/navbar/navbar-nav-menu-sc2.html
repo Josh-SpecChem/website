@@ -1,3 +1,30 @@
+<!-- Socials -->
+<div class="d-xs-block d-sm-block d-md-block d-lg-none mx-auto">
+<ul class="sm-icons list-inline">
+  <li class="list-inline-item mx-auto">
+    <a class="btn btn-outline-primary btn-xs btn-icon rounded-3" href="#">
+      <i class="bi-facebook"></i>
+    </a>
+  </li>
+  <li class="list-inline-item mx-auto">
+    <a class="btn btn-outline-primary btn-xs btn-icon rounded-3" href="#">
+      <i class="bi-twitter"></i>
+    </a>
+  </li>
+  <li class="list-inline-item mx-auto">
+    <a class="btn btn-outline-primary btn-xs btn-icon rounded-3" href="#">
+      <i class="bi-linkedin"></i>
+    </a>
+  </li>
+  <li class="list-inline-item mx-auto">
+    <a class="btn btn-outline-primary btn-xs btn-icon rounded-3" href="#">
+      <i class="bi-youtube"></i>
+    </a>
+  </li>
+</ul>
+</div>
+<!-- End Socials -->
+
 <!-- Products -->
 <li class="hs-has-sub-menu nav-item">
   <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle @@if(category=='company'){active}" href="#" role="button" aria-expanded="false">Products</a>
@@ -34,12 +61,18 @@
 
   <!-- Mega Menu -->
   <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
-
-    <a class="dropdown-item @@if(link=='systems.html'){active}" href="@@autopath/systems.html">Systems</a>
-    <a class="dropdown-item @@if(link=='videos.html'){active}" href="@@autopath/videos.html">Videos</a>
     <a class="dropdown-item @@if(link=='dot-approvals.html'){active}" href="@@autopath/dot-approvals.html">Dot Approvals</a>
     <a class="dropdown-item @@if(link=='master-crossover.html'){active}" href="@@autopath/master-crossover.html">Master Crossover</a>
-    <a class="dropdown-item @@if(link=='master-crossover.html'){active}" href="@@autopath/product-calculator.html">Product Calculator</a>
+    <div class="hs-has-sub-menu nav-item">
+      <a id="authenticationMegaMenu" class="hs-mega-menu-invoker dropdown-item dropdown-toggle @@if(subcategory=='authentication'){active}" href="#" role="button" aria-expanded="false">Product Calculators</a>
+
+      <div class="hs-sub-menu dropdown-menu" aria-labelledby="authenticationMegaMenu" style="min-width: 14rem;">
+        <a class="dropdown-item @@if(link=='page-login.html'){active}" href="@@autopath/epoxy-calculator.html">Epoxy Calculator</a>
+        <a class="dropdown-item @@if(link=='page-signup.html'){active}" href="@@autopath/cementitious-calculator.html">Cementitious Calculator</a>
+      </div>
+    </div>
+    <a class="dropdown-item @@if(link=='systems.html'){active}" href="@@autopath/systems.html">Systems</a>
+    <a class="dropdown-item @@if(link=='videos.html'){active}" href="@@autopath/videos.html">Videos</a>
   </div>
   <!-- End Mega Menu -->
 </li>
@@ -53,9 +86,9 @@
   <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
 
     <a class="dropdown-item @@if(link=='systems.html'){active}" href="@@autopath/company.html">About</a>
-    <a class="dropdown-item @@if(link=='videos.html'){active}" href="@@autopath/people.html">People</a>
     <a class="dropdown-item @@if(link=='dot-approvals.html'){active}" href="@@autopath/careers.html">Careers</a>
     <a class="dropdown-item @@if(link=='master-crossover.html'){active}" href="@@autopath/locations.html">Locations</a>
+    <a class="dropdown-item @@if(link=='videos.html'){active}" href="@@autopath/people.html">People</a>
   </div>
   <!-- End Mega Menu -->
 </li>
