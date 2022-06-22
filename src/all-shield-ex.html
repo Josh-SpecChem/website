@@ -29,23 +29,29 @@
 
 <body>
   <!-- ========== HEADER ========== -->
-  @@include("@@autopath/partials/navbar/main-sticky-top-sc.html", {
-    "topbarcategory": "demos",
-    "topbarlink": "main",
-    "category": "landings",
-    "subcategory": "",
-    "link": "index.html"
-  })
+  @@include("@@autopath/partials/navbar/double-header.html")
   <!-- ========== END HEADER ========== -->
 
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
 
     <!-- Breadcrumb -->
-    @@include("@@autopath/partials/layouts-components/breadcrumbs/all-shield-ex.html")
+    <div class="border-top border-bottom">
+      <div class="container py-3">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a href="@@autopath/demo-app-marketplace/index.html">Water Repellent</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">All Shield EX</li>
+          </ol>
+        </nav>
+        <!-- End Breadcrumb -->
+      </div>
+    </div>
     <!-- End Breadcrumb -->
 
-    <!-- Product Name - d-lg-none/d-xl-none  -->
     <div class="container content-space-t-1 content-space-b-lg-0">
       <div class="row">
         <div class="col text-center">
@@ -54,7 +60,7 @@
       </div>
       <!-- End Row -->
     </div>
-    <!-- End Product Name - d-lg-none/d-xl-none  -->
+  </div>
 
     <!-- SidePanel -->
     <div class="container content-space-t-1 content-space-b-lg-1">
@@ -65,7 +71,273 @@
               <img class="avatar avatar-xxl avatar-4x3" src="@@autopath/assets/img/specchem/products/allshieldex.png" alt="Logo">
             </div>
             <div class="d-grid mb-2">
-              <a class="btn btn-sm btn-block btn-primary transition-3d-hover" href="#">Ask An Expert</a>
+              <a class="btn btn-sm btn-block btn-primary transition-3d-hover" data-bs-toggle="modal" data-bs-target="#signupModal">Ask An Expert</a>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <!-- Header -->
+                  <div class="modal-close">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <!-- End Header -->
+
+                  <!-- Body -->
+                  <div class="modal-body">
+                    <!-- Log in -->
+                    <div id="signupModalFormLogin" style="display: none; opacity: 0;">
+                      <!-- Heading -->
+                      <div class="text-center mb-7">
+                        <h2>Log in</h2>
+                        <p>Don't have an account yet?
+                          <a class="js-animation-link link" href="javascript:;" role="button"
+                             data-hs-show-animation-options='{
+                                   "targetSelector": "#signupModalFormSignup",
+                                   "groupName": "idForm"
+                                 }'>Sign up</a>
+                        </p>
+                      </div>
+                      <!-- End Heading -->
+
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-white btn-lg" href="#">
+                          <span class="d-flex justify-content-center align-items-center">
+                            <img class="avatar avatar-xss me-2" src="../assets/svg/brands/google-icon.svg" alt="Image Description">
+                            Log in with Google
+                          </span>
+                        </a>
+
+                        <a class="js-animation-link btn btn-primary btn-lg" href="#"
+                           data-hs-show-animation-options='{
+                                 "targetSelector": "#signupModalFormLoginWithEmail",
+                                 "groupName": "idForm"
+                               }'>Log in with Email</a>
+                      </div>
+                    </div>
+                    <!-- End Log in -->
+
+                    <!-- Log in with Modal -->
+                    <div id="signupModalFormLoginWithEmail" style="display: none; opacity: 0;">
+                      <!-- Heading -->
+                      <div class="text-center mb-7">
+                        <h2>Log in</h2>
+                        <p>Don't have an account yet?
+                          <a class="js-animation-link link" href="javascript:;" role="button"
+                             data-hs-show-animation-options='{
+                                   "targetSelector": "#signupModalFormSignup",
+                                   "groupName": "idForm"
+                                 }'>Sign up</a>
+                        </p>
+                      </div>
+                      <!-- End Heading -->
+
+                      <form class="js-validate needs-validation" novalidate>
+                        <!-- Form -->
+                        <div class="mb-3">
+                          <label class="form-label" for="signupModalFormLoginEmail">Your email</label>
+                          <input type="email" class="form-control form-control-lg" name="email" id="signupModalFormLoginEmail" placeholder="email@site.com" aria-label="email@site.com" required>
+                          <span class="invalid-feedback">Please enter a valid email address.</span>
+                        </div>
+                        <!-- End Form -->
+
+                        <!-- Form -->
+                        <div class="mb-3">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <label class="form-label" for="signupModalFormLoginPassword">Password</label>
+
+                            <a class="js-animation-link form-label-link" href="javascript:;"
+                               data-hs-show-animation-options='{
+                                 "targetSelector": "#signupModalFormResetPassword",
+                                 "groupName": "idForm"
+                               }'>Forgot Password?</a>
+                          </div>
+
+                          <input type="password" class="form-control form-control-lg" name="password" id="signupModalFormLoginPassword" placeholder="8+ characters required" aria-label="8+ characters required" required minlength="8">
+                          <span class="invalid-feedback">Please enter a valid password.</span>
+                        </div>
+                        <!-- End Form -->
+
+                        <div class="d-grid mb-3">
+                          <button type="submit" class="btn btn-primary form-control-lg">Log in</button>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- End Log in with Modal -->
+
+                    <!-- Sign up -->
+                    <div id="signupModalFormSignup">
+                      <!-- Heading -->
+                      <div class="text-center mb-7">
+                        <h2>Sign up</h2>
+                        <p>Already have an account?
+                          <a class="js-animation-link link" href="javascript:;" role="button"
+                             data-hs-show-animation-options='{
+                                   "targetSelector": "#signupModalFormLogin",
+                                   "groupName": "idForm"
+                                 }'>Log in</a>
+                        </p>
+                      </div>
+                      <!-- End Heading -->
+
+                      <div class="d-grid gap-3">
+                        <a class="btn btn-white btn-lg" href="#">
+                          <span class="d-flex justify-content-center align-items-center">
+                            <img class="avatar avatar-xss me-2" src="../assets/svg/brands/google-icon.svg" alt="Image Description">
+                            Sign up with Google
+                          </span>
+                        </a>
+
+                        <a class="js-animation-link btn btn-primary btn-lg" href="#"
+                           data-hs-show-animation-options='{
+                                 "targetSelector": "#signupModalFormSignupWithEmail",
+                                 "groupName": "idForm"
+                               }'>Sign up with Email</a>
+
+                        <div class="text-center">
+                          <p class="small mb-0">By continuing you agree to our <a href="#">Terms and Conditions</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Sign up -->
+
+                    <!-- Sign up with Modal -->
+                    <div id="signupModalFormSignupWithEmail" style="display: none; opacity: 0;">
+                      <!-- Heading -->
+                      <div class="text-center mb-7">
+                        <h2>Sign up</h2>
+                        <p>Already have an account?
+                          <a class="js-animation-link link" href="javascript:;" role="button"
+                             data-hs-show-animation-options='{
+                                   "targetSelector": "#signupModalFormLogin",
+                                   "groupName": "idForm"
+                                 }'>Log in</a>
+                        </p>
+                      </div>
+                      <!-- End Heading -->
+
+                      <form class="js-validate need-validate" novalidate>
+                        <!-- Form -->
+                        <div class="mb-3">
+                          <label class="form-label" for="signupModalFormSignupEmail">Your email</label>
+                          <input type="email" class="form-control form-control-lg" name="email" id="signupModalFormSignupEmail" placeholder="email@site.com" aria-label="email@site.com" required>
+                          <span class="invalid-feedback">Please enter a valid email address.</span>
+                        </div>
+                        <!-- End Form -->
+
+                        <!-- Form -->
+                        <div class="mb-3">
+                          <label class="form-label" for="signupModalFormSignupPassword">Password</label>
+                          <input type="password" class="form-control form-control-lg" name="password" id="signupModalFormSignupPassword" placeholder="8+ characters required" aria-label="8+ characters required" required>
+                          <span class="invalid-feedback">Your password is invalid. Please try again.</span>
+                        </div>
+                        <!-- End Form -->
+
+                        <!-- Form -->
+                        <div class="mb-3" data-hs-validation-validate-class>
+                          <label class="form-label" for="signupModalFormSignupConfirmPassword">Confirm password</label>
+                          <input type="password" class="form-control form-control-lg" name="confirmPassword" id="signupModalFormSignupConfirmPassword" placeholder="8+ characters required" aria-label="8+ characters required" required
+                                 data-hs-validation-equal-field="#signupModalFormSignupPassword">
+                          <span class="invalid-feedback">Password does not match the confirm password.</span>
+                        </div>
+                        <!-- End Form -->
+
+                        <div class="d-grid mb-3">
+                          <button type="submit" class="btn btn-primary form-control-lg">Sign up</button>
+                        </div>
+
+                        <div class="text-center">
+                          <p class="small mb-0">By continuing you agree to our <a href="#">Terms and Conditions</a></p>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- End Sign up with Modal -->
+
+                    <!-- Reset Password -->
+                    <div id="signupModalFormResetPassword" style="display: none; opacity: 0;">
+                      <!-- Heading -->
+                      <div class="text-center mb-7">
+                        <h2>Forgot password?</h2>
+                        <p>Enter the email address you used when you joined and we'll send you instructions to reset your password.</p>
+                      </div>
+                      <!-- En dHeading -->
+
+                      <form class="js-validate need-validate" novalidate>
+                        <div class="mb-3">
+                          <!-- Form -->
+                          <div class="d-flex justify-content-between align-items-center">
+                            <label class="form-label" for="signupModalFormResetPasswordEmail" tabindex="0">Your email</label>
+
+                            <a class="js-animation-link form-label-link" href="javascript:;"
+                               data-hs-show-animation-options='{
+                                   "targetSelector": "#signupModalFormLogin",
+                                   "groupName": "idForm"
+                                 }'>
+                              <i class="bi-chevron-left small"></i> Back to Log in
+                            </a>
+                          </div>
+
+                          <input type="email" class="form-control form-control-lg" name="email" id="signupModalFormResetPasswordEmail" tabindex="1" placeholder="Enter your email address" aria-label="Enter your email address" required>
+                          <span class="invalid-feedback">Please enter a valid email address.</span>
+                          <!-- End Form -->
+                        </div>
+
+                        <div class="d-grid">
+                          <button type="submit" class="btn btn-primary form-control-lg">Submit</button>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- End Reset Password -->
+                  </div>
+                  <!-- End Body -->
+
+                  <!-- Footer -->
+                  <div class="modal-footer d-block text-center py-sm-5">
+                    <small class="text-cap mb-4">Trusted by the world's best teams</small>
+
+                    <div class="w-85 mx-auto">
+                      <div class="row justify-content-between">
+                        <div class="col">
+                          <img class="img-fluid" src="../assets/svg/brands/gitlab-gray.svg" alt="Logo">
+                        </div>
+                        <!-- End Col -->
+
+                        <div class="col">
+                          <img class="img-fluid" src="../assets/svg/brands/fitbit-gray.svg" alt="Logo">
+                        </div>
+                        <!-- End Col -->
+
+                        <div class="col">
+                          <img class="img-fluid" src="../assets/svg/brands/flow-xo-gray.svg" alt="Logo">
+                        </div>
+                        <!-- End Col -->
+
+                        <div class="col">
+                          <img class="img-fluid" src="../assets/svg/brands/layar-gray.svg" alt="Logo">
+                        </div>
+                        <!-- End Col -->
+                      </div>
+                    </div>
+                    <!-- End Row -->
+                  </div>
+                  <!-- End Footer -->
+                </div>
+              </div>
+            </div>
+            <!-- End Modal -->
+
+             
+              <div class="list-group list-group-horizontal d-md-none d-lg-none d-xl-none d-sm-flex d-flex">
+                <a class="list-group-item list-group-item-action shadow" href="/assets/data-sheets/tech/All-Shield-EX-Tech-Sheet.pdf" title="All Shield EX Technical Data Sheet PDF" download>
+                  <i class="bi-filetype-pdf list-group-icon"></i>TDS
+                </a>
+                <a class="list-group-item list-group-item-action shadow" href="/assets/data-sheets/safety/All-Shield-EX-SDS.pdf" title="All Shield EX Technical Data Sheet PDF" download>
+                  <i class="bi-filetype-pdf list-group-icon"></i>SDS
+                </a>
+                <a class="list-group-item list-group-item-action shadow" href="/assets/data-sheets/sell-sheets/All-Shield-EX-Sell-Sheet-1.20.21.pdf" title="All Shield EX Technical Data Sheet PDF" download>
+                  <i class="bi-filetype-pdf list-group-icon"></i>Sell Sheet
+                </a>
             </div>
           </div>
         </div>
@@ -76,8 +348,6 @@
             <div class="mb-5 ps-md-5">
               <h2 class="d-none d-sm-none d-md-none d-lg-block d-xl-block">All Shield EX<br><small class="text-muted">Oil/stain resistant penetrating concrete protectant</small></h2>
               <p>All Shield EX is an exempt solvent, low VOC, synthetic-modified, silane-siloxane concrete protectant. This clear, penetrating, breathable protectant is designed for use on interior/exterior, horizontal/vertical concrete, natural or synthetic stone surfaces to resist oil, water, food stains, and many other liquid contaminants.</p>
-
-
             </div>
           </div>
         </div>
@@ -85,223 +355,310 @@
       </div>
       <!-- End Row2 -->
     </div>
-    <!-- End SidePanel -->
 
-    <!-- Features & Benefits -->
+    <!-- Documents -->
     <div class="container content-space-t-md-1 content-space-b-lg-1">
       <div class="row">
-        <div class="col-md-3">
-        <h3>Features &amp; Benefits</h3>
-          <!-- List Checked -->
-          <ul class="list-pointer list-pointer-bg-primary">
-            <li class="list-pointer-item">Colorless and non-yellowing</li>
-            <li class="list-pointer-item">Fast drying and can be recoated</li>
-            <li class="list-pointer-item">USDA accepted for indirect food contact</li>
-            <li class="list-pointer-item">Dries quickly, tack-free and skid-resistant</li>
-            <li class="list-pointer-item">Low VOC (< 100 gm/l) formula; SCAQMD, OTC, LADCO, compliant</li>
-            <li class="list-pointer-item">USDA accepted for indirect food contact</li>
-            <li class="list-pointer-item">Long-lasting protection for new as well as old concrete and stone surfaces</li>
-            <li class="list-pointer-item">Reduces water penetration minimizing the effects of freeze-thaw and weathering on concrete structures</li>
-            <li class="list-pointer-item">Excellent oil, water and stain repellent for interior/exterior surfaces subjected to motor oil, de-icing salts and other damaging contaminants</li>
-          </ul>
-          <!-- End List Checked -->
-        </div>
-    <!-- End Features & Benefits -->
-      <div class="col-md-3 offset-md-6">
-            <h3 class="text-center">Documents</h3>
+        <div class="col-md-3 mb-5 d-none d-sm-none d-md-block d-lg-block d-xl-block">
+          <h3 class="text-center">Downloads</h3>
             <!-- List Group -->
             <div class="list-group list-group-lg">
               <a class="list-group-item list-group-item-action" href="/assets/data-sheets/tech/All-Shield-EX-Tech-Sheet.pdf" title="All Shield EX Technical Data Sheet PDF" download>
-                <i class="bi-filetype-pdf list-group-icon"></i> Technical Data Sheet
+                <i class="bi-filetype-pdf list-group-icon"></i>Technical Data Sheet
               </a>
               <a class="list-group-item list-group-item-action" href="/assets/data-sheets/safety/All-Shield-EX-SDS.pdf" title="All Shield EX Technical Data Sheet PDF" download>
-                <i class="bi-filetype-pdf list-group-icon"></i> Safety Data Sheet
+                <i class="bi-filetype-pdf list-group-icon"></i>Safety Data Sheet
               </a>
               <a class="list-group-item list-group-item-action" href="/assets/data-sheets/sell-sheets/All-Shield-EX-Sell-Sheet-1.20.21.pdf" title="All Shield EX Technical Data Sheet PDF" download>
-                <i class="bi-filetype-pdf list-group-icon"></i> Product Sell Sheet
+                <i class="bi-filetype-pdf list-group-icon"></i>Product Sell Sheet
               </a>
             </div>
             <!-- End List Group -->
+        </div>
+      <!-- End Documents -->
+
+
+        <!-- Data Sheets Tabs -->
+        <div class="col-md-9 ps-md-7">
+          <!-- Nav Scroller -->
+            <div class="js-nav-scroller hs-nav-scroller-horizontal">
+              <span class="hs-nav-scroller-arrow-prev" style="display: none;">
+                <a class="hs-nav-scroller-arrow-link" href="javascript:;">
+                  <i class="bi-chevron-left"></i>
+                </a>
+              </span>
+
+              <span class="hs-nav-scroller-arrow-next" style="display: none;">
+                <a class="hs-nav-scroller-arrow-link" href="javascript:;">
+                  <i class="bi-chevron-right"></i>
+                </a>
+              </span>
+
+              <!-- Nav -->
+              <ul class="nav nav-segment nav-fill" id="featuresTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" href="#featuresOne" id="featuresOne-tab" data-bs-toggle="tab" data-bs-target="#featuresOne" role="tab" aria-controls="featuresOne" aria-selected="true" style="min-width: 7rem;">Features &amp; Benefits</a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" href="#featuresTwo" id="featuresTwo-tab" data-bs-toggle="tab" data-bs-target="#featuresTwo" role="tab" aria-controls="featuresTwo" aria-selected="false" style="min-width: 7rem;">Product Details</a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" href="#featuresThree" id="featuresThree-tab" data-bs-toggle="tab" data-bs-target="#featuresThree" role="tab" aria-controls="featuresThree" aria-selected="false" style="min-width: 7rem;">Product Links</a>
+                </li>
+              </ul>
+              <!-- End Nav -->
+            </div>
+            <!-- End Content Tabs -->
+
+            <div class="tab-content" id="pills-tabContent">
+              <!-- Tab Pane 1 -->
+              <div class="tab-pane fade show active" id="featuresOne" role="tabpanel" aria-labelledby="featuresOne-tab">
+                <div class="container content-space-1 content-space-lg-1">
+                  <!-- Card -->
+                  <div class="card card-lg">
+                    <!-- Header -->
+                    <div class="card-header bg-dark py-sm-5">
+                      <div class="hstack gap-3">
+                        <div class="ms-3">
+                          <h2 class="mb-0 card-text text-center text-white">Features &amp; Benefits</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Header -->
+
+                    <!-- Card Body -->
+                    <div class="card-body">
+                      <div class="mb-7">
+                        <h3></h3>
+                          <!-- List Checked -->
+                          <ul class="list-pointer list-pointer-bg-primary">
+                            <li class="list-pointer-item">Colorless and non-yellowing</li>
+                            <li class="list-pointer-item">Fast drying and can be recoated</li>
+                            <li class="list-pointer-item">Dries quickly, tack-free and skid-resistant</li>
+                            <li class="list-pointer-item">USDA accepted for indirect food contact</li>
+                            <li class="list-pointer-item">Long-lasting protection for new as well as old concrete and stone surfaces</li>
+                            <li class="list-pointer-item">Reduces water penetration minimizing the effects of freeze-thaw and weathering on concrete structures</li>
+                            <li class="list-pointer-item">Excellent oil, water and stain repellent for interior/exterior surfaces subjected to motor oil, de-icing salts and other damaging contaminants</li>
+                          </ul>
+                          <!-- End List Checked -->
+                        </div>
+                    </div>
+                    <!-- End Card Body -->
+                  </div>
+                  <!-- End Card -->
+                </div>
+                <!-- End Content -->
+            </div>
+            <!-- End Tab Pane -->
+
+            <div class="tab-pane fade" id="featuresTwo" role="tabpanel" aria-labelledby="featuresTwo-tab">
+            <!-- Content -->
+              <div class="container content-space-1 content-space-lg-1">
+                <!-- Card -->
+                <div class="card card-lg">
+                  <!-- Header -->
+                  <div class="card-header bg-dark py-sm-5">
+                    <div class="hstack gap-3">
+                      <div class="ms-3">
+                        <h2 class="mb-0 card-text text-center text-white">Product Details</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Header -->
+
+                <!-- Card Body -->
+                <div class="card-body">
+                  <!-- Icon Blocks -->
+                <div class="container content-space-1">
+                  <!-- Heading -->
+                  <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+                    <span class="text-cap"></span>
+                    <h2 class="h1"></h2>
+                  </div>
+                  <!-- End Heading -->
+
+                  <div class="row">
+                    <div class="col-md-4 mb-5 mb-md-0">
+                      <!-- Icon Blocks -->
+                      <div class="px-lg-3">
+                        <div class="svg-icon text-primary mb-3 text-center">
+                          <img src="assets/img/specchem/icons/building-icon.png">
+                        </div>
+                        <h3 class="text-center">Usage</h3>
+                        <ul>
+                          <li>Interior and exterior concrete</li>
+                          <li>Natural or synthetic stone</li>
+                          <li>Commercial and industrial floors</li>
+                          <li>Driveways, parking structures, bridges, marine platforms, and more</li>
+                        </ul>
+                      </div>
+                      <!-- End Icon Blocks -->
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-md-4 mb-5 mb-md-0">
+                      <!-- Icon Blocks -->
+                      <div class="px-lg-3">
+                        <div class="svg-icon text-primary mb-3 text-center">
+                          <img src="assets/img/specchem/icons/clipboard-check-fill-icon.png">
+                        </div>
+                        <h3 class="text-center">Standards</h3>
+                        <ul>
+                          <li>USDA accepted</li>
+                          <li>Low VOC (<100 gm/l) formula; SCAQMD, OTC, LADCO, compliant</li>
+                        </ul>
+                      </div>
+                      <!-- End Icon Blocks -->
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-md-4">
+                      <!-- Icon Blocks -->
+                      <div class="px-lg-3">
+                        <div class="svg-icon text-primary mb-3 text-center">
+                          <img src="assets/img/specchem/icons/bucket-icon.png">
+                        </div>
+                        <h3 class="text-center">Packaging</h3>
+                        <ul>
+                          <li>55 gallon drums (208.2 liters)</li>
+                          <li>5 gallon pails (18 liters)</li>
+                          <li>1 gallon (6 cans to a case) (3.8 liters)</li>
+                        </ul>
+                      </div>
+                      <!-- End Icon Blocks -->
+                    </div>
+                    <!-- End Col -->
+                  </div>
+                  <!-- End Row -->
+                </div>
+                <!-- End Icon Blocks -->
+                </div>
+                <!-- End Card Body -->
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Tab Pane 2 -->
+          </div>
+
+            <div class="tab-pane fade" id="featuresThree" role="tabpanel" aria-labelledby="featuresThree-tab">
+              <!-- Tab Pane 3 -->
+              <div class="container content-space-1 content-space-lg-1">
+                <!-- Card -->
+                <div class="card card-lg">
+                  <!-- Header -->
+                  <div class="card-header bg-dark py-sm-5">
+                    <div class="hstack gap-3">
+                      <div class="ms-3">
+                        <h2 class="mb-0 card-text text-center text-white">Product Links</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Header -->
+
+              <!-- Card Body -->
+              <div class="card-body">
+                
+              </div>
+              <!-- End Card Body -->
+            </div>
+            <!-- End Card -->
+          </div>
+          <!-- End Tab Pane 3-->
+          </div>
           </div>
         </div>
+    
+<!-- End Content -->
 
+<!-- Gallery -->
 
-    <!-- Video Gallery -->
-    <div class="position-relative bg-img-start" style="background-image: url(../assets/svg/components/card-11.svg);">
-      <div class="container content-space-2 content-space-lg-3 position-relative zi-2">
-        <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-9">
-          <!-- Heading -->
-          <div class="mb-5">
-            <h1>Product Videos</h1>
-            <p></p>
-          </div>
-          <!-- End Heading -->
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 mb-2">
-            <!-- Video Block -->
-            <div id="youTubeVideoPlayer" class="video-player video-player-inline-btn rounded-2">
-              <img class="img-fluid video-player-preview rounded-2" src="../assets/img/900x450/img14.jpg" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "d4eDWc8g0e0",
-                   "parentSelector": "#youTubeVideoPlayer",
-                   "targetSelector": "#youTubeVideoIframe",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>
-            <!-- End Video Block -->
-          </div>
-          <!-- End Col -->
-
-          <div class="col-md-6 mb-2">
-            <!-- Video Block -->
-            <div id="youTubeVideoPlayer" class="video-player video-player-inline-btn rounded-2">
-              <img class="img-fluid video-player-preview rounded-2" src="../assets/img/900x450/img14.jpg" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "d4eDWc8g0e0",
-                   "parentSelector": "#youTubeVideoPlayer",
-                   "targetSelector": "#youTubeVideoIframe",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>
-            <!-- End Video Block -->
-          </div>
-          <!-- End Col -->
-        <!-- End Row -->
+<div class="position-relative bg-img-start" style="background-image: url(../assets/svg/components/card-11.svg);">
+  <div class="container content-space-2 content-space-lg-3 position-relative zi-2">
+    <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-9">
+      <!-- Heading -->
+      <div class="mb-5">
+        <h1>Product Videos</h1>
+        <p></p>
       </div>
-
-      <!-- Shape -->
-      <div class="shape shape-bottom zi-1">
-        <svg width="3000" height="500" viewBox="0 0 3000 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 500H3000V0L0 500Z" fill="#fff"/>
-        </svg>
-      </div>
-      <!-- End Shape -->
-      </div>
+      <!-- End Heading -->
     </div>
-    <!-- End Video Gallery -->
-
-    <!-- Icon Blocks -->
-<div class="overflow-hidden">
-  <div class="container content-space-2 content-space-lg-3">
-    <!-- Heading -->
-    <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-      <h2>Features built for scale</h2>
-      <p>Get insights to dig down into what's powering your growth the most.</p>
-    </div>
-    <!-- End Heading -->
 
     <div class="row">
-      <div class="col-lg-4 d-none d-lg-block">
-        <!-- Card -->
-        <div class="position-relative pe-lg-4">
-          <a class="card card-transition shadow-none bg-img-start" href="#" style="background-image: url(../assets/img/specchem/products/allshieldex.png); min-height: 27rem;">
-            <div class="card-body">
-            </div>
+      <div class="col-md-6 mb-2">
+        <!-- Video Block -->
+        <div id="youTubeVideoPlayer" class="video-player video-player-inline-btn rounded-2">
+          <img class="img-fluid video-player-preview rounded-2" src="../assets/img/900x450/img14.jpg" alt="Image">
+
+          <!-- Play Button -->
+          <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+             data-hs-video-player-options='{
+               "videoId": "d4eDWc8g0e0",
+               "parentSelector": "#youTubeVideoPlayer",
+               "targetSelector": "#youTubeVideoIframe",
+               "isAutoplay": true
+             }'>
+            <span class="video-player-icon shadow-sm">
+              <i class="bi-play-fill"></i>
+            </span>
           </a>
+          <!-- End Play Button -->
 
-          <!-- SVG Shape -->
-          <div class="position-absolute bottom-0 start-0 zi-n1 mb-n7 ms-n7" style="width: 12rem;">
-            <img class="w-100" src="../assets/svg/components/dots-lg.svg" alt="SVG">
+          <!-- Video Iframe -->
+          <div class="ratio ratio-16x9">
+            <div id="youTubeVideoIframe"></div>
           </div>
-          <!-- End SVG Shape -->
+          <!-- End Video Iframe -->
         </div>
-        <!-- End Card -->
+        <!-- End Video Block -->
       </div>
       <!-- End Col -->
 
-      <div class="col-lg-8">
-        <div class="row">
-          <div class="col-sm-6 mb-3 mb-sm-7">
-            <!-- Icon Blocks -->
-            <div class="pe-lg-6">
-              <span class="svg-icon text-primary mb-4">
-                @@include("@@autopath/assets/vendor/duotone-icons/gra/gra007.svg")
-              </span>
+      <div class="col-md-6 mb-2">
+        <!-- Video Block -->
+        <div id="youTubeVideoPlayer" class="video-player video-player-inline-btn rounded-2">
+          <img class="img-fluid video-player-preview rounded-2" src="../assets/img/900x450/img14.jpg" alt="Image">
 
-              <h3 class="h4">Smart Dashboards</h3>
-              <p>This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
-            </div>
-            <!-- End Icon Blocks -->
+          <!-- Play Button -->
+          <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+             data-hs-video-player-options='{
+               "videoId": "d4eDWc8g0e0",
+               "parentSelector": "#youTubeVideoPlayer",
+               "targetSelector": "#youTubeVideoIframe",
+               "isAutoplay": true
+             }'>
+            <span class="video-player-icon shadow-sm">
+              <i class="bi-play-fill"></i>
+            </span>
+          </a>
+          <!-- End Play Button -->
+
+          <!-- Video Iframe -->
+          <div class="ratio ratio-16x9">
+            <div id="youTubeVideoIframe"></div>
           </div>
-
-          <div class="col-sm-6 mb-3 mb-sm-7">
-            <!-- Icon Blocks -->
-            <div class="pe-lg-6">
-              <span class="svg-icon text-primary mb-4">
-                @@include("@@autopath/assets/vendor/duotone-icons/gen/gen011.svg")
-              </span>
-
-              <h4>Control Center</h4>
-              <p>Now that we've aligned the details, it's time to get things mapped out and organized.</p>
-            </div>
-            <!-- End Icon Blocks -->
-          </div>
-
-          <div class="col-sm-6 mb-3 mb-sm-0">
-            <!-- Icon Blocks -->
-            <div class="pe-lg-6">
-              <span class="svg-icon text-primary mb-4">
-                @@include("@@autopath/assets/vendor/duotone-icons/com/com010.svg")
-              </span>
-
-              <h4>Email Reports</h4>
-              <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
-            </div>
-            <!-- End Icon Blocks -->
-          </div>
-
-          <div class="col-sm-6">
-            <!-- Icon Blocks -->
-            <div class="pe-lg-6">
-              <span class="svg-icon text-primary mb-4">
-                @@include("@@autopath/assets/vendor/duotone-icons/gen/gen022.svg")
-              </span>
-
-              <h4>Forecasting</h4>
-              <p>Staying focused allows us to turn every project we complete into something we love.</p>
-            </div>
-            <!-- End Icon Blocks -->
-          </div>
+          <!-- End Video Iframe -->
         </div>
+        <!-- End Video Block -->
       </div>
       <!-- End Col -->
-    </div>
     <!-- End Row -->
   </div>
-</div>
-<!-- End Icon Blocks -->
 
-  </main>
+  <!-- Shape -->
+  <div class="shape shape-bottom zi-1">
+    <svg width="3000" height="500" viewBox="0 0 3000 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 500H3000V0L0 500Z" fill="#fff"/>
+    </svg>
+  </div>
+  <!-- End Shape -->
+
+</div>
+<!-- End Gallery -->
+
+    </div>
+</main>
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- ========== FOOTER ========== -->
@@ -327,12 +684,15 @@
   <script src="./node_modules/tom-select/dist/js/tom-select.complete.min.js"></script>
   <script src="../assets/vendor/hs-video-player/dist/hs-video-player.min.js"></script>
   <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
+  <script src="../assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+<script src="../assets/vendor/hs-toggle-password/dist/js/hs-toggle-password.js"></script>
 
   <!-- JS Front -->
   <!-- bundlejs:theme [@@autopath] -->
   <script src="@@autopath/assets/js/hs.core.js"></script>
   <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
   <script src="../assets/js/hs.tom-select.js"></script>
+  <script src="../assets/js/hs.bs-validation.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
@@ -374,7 +734,26 @@
       // INITIALIZATION OF NAV SCROLLER
       // =======================================================
       new HsNavScroller('.js-nav-scroller')
-    })()
+      
+
+    // INITIALIZATION OF BOOTSTRAP VALIDATION
+    // =======================================================
+    HSBsValidation.init('.js-validate', {
+      onSubmit: data => {
+        data.event.preventDefault()
+        alert('Submited')
+}
+    })
+
+    // INITIALIZATION OF SHOW ANIMATIONS
+    // =======================================================
+    new HSShowAnimation('.js-animation-link')
+
+
+    // INITIALIZATION OF TOGGLE PASSWORD
+    // =======================================================
+    new HSTogglePassword('.js-toggle-password')
+  })()
   </script>
 </body>
 </html>
