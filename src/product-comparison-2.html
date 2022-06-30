@@ -45,13 +45,16 @@
 
   <div class="row align-items-lg-center">
     <div class="col mb-3 mb-lg-0">
-      <div class="dropdown d-grid gap-2 col-6 mx-auto pb-3">
-          <a class="btn btn-outline-primary dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+      <div class="dropdown">
+        <div class="col-6 mx-auto d-grid gap-2 pb-3">
+          <button class="btn btn-primary dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
             Select Product Category
-          </a>
-          <div class="dropdown-menu w-75" aria-labelledby="dropdownMenuLink">
-            <!-- Nav Scroller -->
-            <div class="js-nav-scroller hs-nav-scroller-vertical" style="max-height: 12rem;"
+          </button>
+        </div>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="featuresTab" role="tablist">
+            <!-- Nav Scroller
+            <div class="js-nav-scroller hs-nav-scroller-vertical" style="max-height: 12rem; max-width: 22rem;"
                      data-hs-nav-scroller-options='{
                        "type": "vertical"
                      }'>
@@ -66,95 +69,95 @@
                   <i class="bi-chevron-right"></i>
                 </a>
               </span>
+            -->
 
-        <!-- Nav Pills -->
-        <ul class="nav nav-pills-sm nav-vertical" id="featuresTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <a class="nav-link active" href="#featuresOne" id="featuresOne-tab" data-bs-toggle="tab" data-bs-target="#featuresOne" role="tab" aria-controls="featuresOne" aria-selected="true">
+        
+          <li>
+            <a class="dropdown-item active" href="#featuresOne" id="featuresOne-tab" data-bs-toggle="tab" data-bs-target="#featuresOne" role="tab" aria-controls="featuresOne" aria-selected="true">
               Bond Breakers
             </a>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#featuresTwo" id="featuresTwo-tab" data-bs-toggle="tab" data-bs-target="#featuresTwo" role="tab" aria-controls="featuresTwo" aria-selected="false">
+          <li>
+            <a class="dropdown-item" href="#featuresTwo" id="featuresTwo-tab" data-bs-toggle="tab" data-bs-target="#featuresTwo" role="tab" aria-controls="featuresTwo" aria-selected="false">
               Cementitious Grouts
             </a>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#featuresThree" id="featuresThree-tab" data-bs-toggle="tab" data-bs-target="#featuresThree" role="tab" aria-controls="featuresThree" aria-selected="false">
+          <li>
+            <a class="dropdown-item" href="#featuresThree" id="featuresThree-tab" data-bs-toggle="tab" data-bs-target="#featuresThree" role="tab" aria-controls="featuresThree" aria-selected="false">
               Cleaners/Strippers
             </a>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#featuresFour" id="featuresFour-tab" data-bs-toggle="tab" data-bs-target="#featuresFour" role="tab" aria-controls="featuresFour" aria-selected="false">
+          <li>
+            <a class="dropdown-item" href="#featuresFour" id="featuresFour-tab" data-bs-toggle="tab" data-bs-target="#featuresFour" role="tab" aria-controls="featuresFour" aria-selected="false">
               Cures/Sealers
             </a>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#featuresFive" id="featuresFive-tab" data-bs-toggle="tab" data-bs-target="#featuresFive" role="tab" aria-controls="featuresFive" aria-selected="false">
+          <li>
+            <a class="dropdown-item" href="#featuresFive" id="featuresFive-tab" data-bs-toggle="tab" data-bs-target="#featuresFive" role="tab" aria-controls="featuresFive" aria-selected="false">
              Dry Shake Hardeners &amp; Toppings
             </a>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#featuresSix" id="featuresSix-tab" data-bs-toggle="tab" data-bs-target="#featuresSix" role="tab" aria-controls="featuresSix" aria-selected="false">
+          <li>
+            <a class="dropdown-item" href="#featuresSix" id="featuresSix-tab" data-bs-toggle="tab" data-bs-target="#featuresSix" role="tab" aria-controls="featuresSix" aria-selected="false">
              Evaporation Retarders
             </a>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#featuresSeven" id="featuresSeven-tab" data-bs-toggle="tab" data-bs-target="#featuresSeven" role="tab" aria-controls="featuresSeven" aria-selected="false">
+          <li>
+            <a class="dropdown-item" href="#featuresSeven" id="featuresSeven-tab" data-bs-toggle="tab" data-bs-target="#featuresSeven" role="tab" aria-controls="featuresSeven" aria-selected="false">
               Form Release
             </a>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#featuresEight" id="featuresEight-tab" data-bs-toggle="tab" data-bs-target="#featuresEight" role="tab" aria-controls="featuresEight" aria-selected="false">
+          <li>
+            <a class="dropdown-item" href="#featuresEight" id="featuresEight-tab" data-bs-toggle="tab" data-bs-target="#featuresEight" role="tab" aria-controls="featuresEight" aria-selected="false">
               Latex Bonding Agents
             </a>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#featuresNine" id="featuresNine-tab" data-bs-toggle="tab" data-bs-target="#featuresNine" role="tab" aria-controls="featuresNine" aria-selected="false">
+          <li>
+            <a class="dropdown-item" href="#featuresNine" id="featuresNine-tab" data-bs-toggle="tab" data-bs-target="#featuresNine" role="tab" aria-controls="featuresNine" aria-selected="false">
              Liquid Hardeners
             </a>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#featuresTen" id="featuresTen-tab" data-bs-toggle="tab" data-bs-target="#featuresTen" role="tab" aria-controls="featuresTen" aria-selected="false">
+          <li>
+            <a class="dropdown-item" href="#featuresTen" id="featuresTen-tab" data-bs-toggle="tab" data-bs-target="#featuresTen" role="tab" aria-controls="featuresTen" aria-selected="false">
               Paving Curing Compounds
             </a>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#featuresEleven" id="featuresEleven-tab" data-bs-toggle="tab" data-bs-target="#featuresEleven" role="tab" aria-controls="featuresEleven" aria-selected="false">
+          <li>
+            <a class="dropdown-item" href="#featuresEleven" id="featuresEleven-tab" data-bs-toggle="tab" data-bs-target="#featuresEleven" role="tab" aria-controls="featuresEleven" aria-selected="false">
              Protective Sealers
             </a>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#featuresTwelve" id="featuresTwelve-tab" data-bs-toggle="tab" data-bs-target="#featuresTwelve" role="tab" aria-controls="featuresTwelve" aria-selected="false">
-             Repair Productss
+          <li>
+            <a class="dropdown-item" href="#featuresTwelve" id="featuresTwelve-tab" data-bs-toggle="tab" data-bs-target="#featuresTwelve" role="tab" aria-controls="featuresTwelve" aria-selected="false">
+             Repair Products
             </a>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#featuresThirteen" id="featuresThirteen-tab" data-bs-toggle="tab" data-bs-target="#featuresThirteen" role="tab" aria-controls="featuresThirteen" aria-selected="false">
+          <li>
+            <a class="dropdown-item" href="#featuresThirteen" id="featuresThirteen-tab" data-bs-toggle="tab" data-bs-target="#featuresThirteen" role="tab" aria-controls="featuresThirteen" aria-selected="false">
              Specialty Epoxies/Polyureas
             </a>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#featuresFourteen" id="featuresFourteen-tab" data-bs-toggle="tab" data-bs-target="#featuresFourteen" role="tab" aria-controls="featuresFourteen" aria-selected="false">
+          <li>
+            <a class="dropdown-item" href="#featuresFourteen" id="featuresFourteen-tab" data-bs-toggle="tab" data-bs-target="#featuresFourteen" role="tab" aria-controls="featuresFourteen" aria-selected="false">
               Surface Retarders
             </a>
           </li>
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#featuresFifteen" id="featuresFifteen-tab" data-bs-toggle="tab" data-bs-target="#featuresFifteen" role="tab" aria-controls="featuresFifteen" aria-selected="false">
+          <li>
+            <a class="dropdown-item" href="#featuresFifteen" id="featuresFifteen-tab" data-bs-toggle="tab" data-bs-target="#featuresFifteen" role="tab" aria-controls="featuresFifteen" aria-selected="false">
              Water Repellents
             </a>
           </li>
@@ -162,9 +165,10 @@
         <!-- End Nav Pills -->
       </div>
       <!-- End Nav Scroller -->
+      </div>
     </div>
     <!-- End Col -->
-  </div>
+  
 
   <div class="row">
     <div class="col">

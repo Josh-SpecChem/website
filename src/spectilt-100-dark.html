@@ -18,6 +18,7 @@
   <!-- bundlecss:vendor [@@autopath] -->
   <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/aos/dist/aos.css">
   <link rel="stylesheet" href="./node_modules/tom-select/dist/css/tom-select.bootstrap5.css">
 
   <!-- CSS Front Template -->
@@ -25,82 +26,56 @@
   <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
 </head>
 
-<body>
+<body class="darkblue-900">
   <!-- ========== HEADER ========== -->
-  @@include("@@autopath/partials/navbar/double-header.html")
+  @@include("@@autopath/partials/navbar/double-header-dark.html")
   <!-- ========== END HEADER ========== -->
 
   <!-- ========== MAIN CONTENT ========== -->
-  <main id="content" role="main" class="bg-dark text-white">
+  <main id="content" role="main" class="darkblue-900">
     <div class="position-relative">
       <!-- Hero -->
-      <div class="gradient-y-overlay-lg-white bg-img-start content-space-0 mt-6" style="background-image: url(@@autopath/assets/img/specchem/construction-stock.jpg);">
-        
-        <!-- Breadcrumb
-        <div class="border-bottom position-fixed bg-white w-100 shadow">
-          <div class="container py-3">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item">
-                  <a href="@@autopath/demo-app-marketplace/products.html">Products</a>
-                </li>
-                <li class="breadcrumb-item">
-                  <a href="@@autopath/demo-app-marketplace/index.html">Cure &amp; Seals</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">E-Cure</li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-        End Breadcrumb -->
-
-        <div class="container content-space-3">
-          <div class="row">
-            <div class="col-md-7 col-lg-8">
-              <small class="badge bg-success rounded-pill">Bestseller</small>
-              <h1 class="display-1">SpecTilt 100</h1>
-              <h4>Premium reactive solvent-based tilt-up bond breaker</h4>
-
-              <div class="d-flex align-items-center flex-wrap">
-                <!-- Media
-                <div class="d-flex align-items-center me-4">
-                  <div class="flex-shrink-0 avatar-group avatar-group-xs">
-                    <span class="avatar avatar-xs avatar-circle">
-                      <img class="avatar-img" src="@@autopath/assets/img/160x160/img10.jpg" alt="Image Description">
-                    </span>
-                  </div>
-                  <div class="flex-grow-1">
-                    <span class="ps-2">Created by <a class="link" href="@@autopath/demo-course/author-profile.html">Christina Kray</a></span>
-                  </div>
-                </div>
-                End Media -->
-
-                <div class="d-flex align-items-center flex-wrap">
-                  <!-- Rating
-                  <div class="d-flex gap-1">
-                    <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
-                    <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
-                    <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
-                    <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
-                    <img src="@@autopath/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
-                  </div>
-                  End Rating -->
-                  <div class="ms-1">
-                   <!-- <span class="fw-semi-bold text-dark me-1">4.91</span>
-                    <span>(1.5k+ reviews)</span> -->
-                  </div>
-                </div>
-              </div>
+      <div class="bg-img-center py-5" style="background-image: url(@@autopath/assets/img/specchem/products/tilt-up-bond-breakers/hero/bond-breaker-hero-dark.png">
+        <div class="container content-space-2 content-space-lg-3">
+          <div class="w-md-65 w-lg-50">
+            <div class="d-flex flex-row align-items-start">
+              <h1 class="text-white display-1">SpecTilt 100</h1>
+                <span class="badge lightgreen-500 mx-1">Bestseller</span>
             </div>
-            <!-- End Col -->
+            <p class="text-white text-cap">Premium reactive solvent-based tilt-up bond breaker</p>
           </div>
-          <!-- End Row -->
         </div>
       </div>
-      <!-- End Hero -->
+    <!-- End Hero -->
+  </div>
 
-      <!-- Sidebar -->
-      <div class="container-fluid content-space-t-md-4 position-md-absolute top-0 start-0 end-0">
+    <div class="container-fluid py-3 bg-dark position-relative">
+      <div class="w-md-50 w-lg-75">
+        <div class="d-flex gap-3 justify-content-evenly">
+          <div class="">
+            <div class="h3 pt-4 text-white">Data Sheets:</div>
+          </div>
+          <div class="card card-flush card-transition bg-dark zi-998" style="position: relative;">
+            <a class="px-3 stretched-link" download="/assets/data-sheets/tech/Deco-Shine-Tech-Sheet1.pdf" href="assets/img/specchem/icons/tds-pdf-icon-yellow.png" title="All Shield EX Technical Data Sheet PDF" style="position: relative;">
+              <img src="assets/img/specchem/icons/tds-pdf-icon-yellow.png" alt="Card image cap" style="max-height:72px; max-width: 72px;">
+            </a>
+          </div>
+          <div class="card card-flush card-transition bg-dark zi-998" style="position: relative;">
+            <a class="px-3 stretched-link" download="/assets/data-sheets/tech/Deco-Shine-Tech-Sheet1.pdf" href="assets/img/specchem/icons/sds-pdf-icon-yellow.png" title="All Shield EX Technical Data Sheet PDF">
+              <img src="assets/img/specchem/icons/sds-pdf-icon-yellow.png" alt="Card image cap" style="max-height:72px; max-width: 72px;">
+            </a>
+          </div>
+          <div class="card card-flush card-transition bg-dark zi-998" style="position: relative;">
+          <a class="px-3 stretched-link" download="/assets/data-sheets/tech/Deco-Shine-Tech-Sheet1.pdf" href="assets/img/specchem/icons/sell-pdf-icon-yellow.png" title="All Shield EX Technical Data Sheet PDF" style="position: relative;">
+            <img src="assets/img/specchem/icons/sell-pdf-icon-yellow.png" alt="Card image cap" style="max-height:72px; max-width: 72px;">
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+      <div class="container-fluid content-space-t-md-5 content-space-t-lg-6 position-md-absolute top-0 start-0 end-0">
         <div class="row justify-content-end">
           <div class="col-md-5 col-lg-4 position-relative zi-2 mb-1 mb-md-0">
             <!-- Sticky Block -->
@@ -116,45 +91,62 @@
                    }'>
                 <!-- Card -->
                 <div class="card card-flush card-transition p-3 shadow">
-                  <div class="position-relative">
+                  <p class="text-center text-muted">Available in 5 or 55 gal units</p>
+                  <div class="position-relative mx-auto">
                     <a class="video-player video-player-btn" href="https://www.youtube.com/watch?v=vDld69In4h0" role="button" data-fslightbox="youtube-video">
-                      <img class="card-img-top img-fluid" src="../assets/img/specchem/products/tilt-up-bond-breakers/800x800/spectilt-100.png" alt="Card image cap">
+                      <img class="card-img-top img-fluid" src="../assets/img/specchem/products/tilt-up-bond-breakers/800x800/spectilt-100.png" alt="Card image cap" style="height:300px; width:300px;">
                       <div class="position-absolute top-50 start-50 translate-middle">
                         <span class="video-player-icon shadow bg-light">
-                        <i class="bi-play-fill text-dark"></i>
+                          <i class="bi-play-fill text-dark"></i>
                         </span>
-                        <span class="text-dark"></span>
                       </div>
                     </a>
                   </div>
 
                   <div class="card-body">
                     <div class="d-grid mb-5">
-                      <a class="btn btn-primary btn-transition" href="#">Ask a Tilt-up Expert</a>
+                      <a class="btn bg-dark btn-transition text-white" href="#">Ask a Tilt-up Expert</a>
                     </div>
-                    <h3 class="card-title">Downloads</h3>
-                    <div class="card-text">
-                      <ul class="list-unstyled list-py-1">
-                        <li>
-                          <a href="/assets/data-sheets/tech/Deco-Shine-Tech-Sheet1.pdf" title="All Shield EX Technical Data Sheet PDF" download>
-                            <i class="bi-download nav-icon text-warning"></i> TDS
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/assets/data-sheets/safety/Deco-Shine-SDS2.pdf" title="All Shield EX Technical Data Sheet PDF" download>
-                            <i class="bi-download nav-icon text-warning"></i> SDS
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/assets/data-sheets/sell-sheets/Deco-Shine-Sell-Sheet-9.12.19.pdf" title="All Shield EX Technical Data Sheet PDF" download>
-                            <i class="bi-download nav-icon text-warning"></i> Sell Sheet
-                          </a>
-                        </li>
-                      </ul>
+                    <!-- Subscribe -->
+                    <div class="container content-space-1">
+                      <div class="w-100 text-center mx-md-auto">
+                        <div class="row justify-content-lg-between">
+                          <!-- Heading -->
+                          <div class="mb-3">
+                            <h4>Join Our Mailing List:</h4>
+                          </div>
+                          <!-- End Heading -->
+
+                          <form>
+                            <!-- Input Card -->
+                            <div class="input-card card-transition input-card-sm border mb-3 shadow-xl">
+                              <div class="input-card-form">
+                                <label for="subscribeFormEg1" class="form-label visually-hidden">Enter email</label>
+                                <input type="text" class="form-control form-control-lg" id="subscribeFormEg1" placeholder="Enter email" aria-label="Enter email">
+                              </div>
+                              <button type="button" class="btn darkblue-900 text-white btn-lg">Get started</button>
+                            </div>
+                            <!-- End Input Card -->
+                          </form>
+
+                          <div class="">
+                            <h4 class="mt-5 mb-3">Downloads:</h4>
+                            <div class="card card-flush card-transition shadow-xl pt-3">
+                              <a class="px-3 stretched-link" download="/assets/data-sheets/tech/Deco-Shine-Tech-Sheet1.pdf" href="assets/img/specchem/icons/tds-pdf-icon-yellow.png" title="All Shield EX Technical Data Sheet PDF" style="position: relative;">
+                                <img class="img-fluid rounded-3" src="../assets/img/specchem/app.png" alt="Card image cap" style="height:150px; width:150px;">
+                              </a>
+                            </div>
+                            <div class="card card-flush card-transition shadow-xl mt-3 pb-3">
+                              <a class="px-3 stretched-link" download="/assets/data-sheets/tech/Deco-Shine-Tech-Sheet1.pdf" href="assets/img/specchem/icons/tds-pdf-icon-yellow.png" title="All Shield EX Technical Data Sheet PDF" style="position: relative;">
+                                <img class="img-fluid mt-3 rounded-2" src="../assets/img/specchem/specguide.png" alt="Card image cap" style="height:150px; width:150px;">
+                              </a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
                     </div>
-                    <p class="card-text">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
+                    <!-- End Subscribe -->
                   </div>
                 </div>
                 <!-- End Card -->
@@ -171,12 +163,14 @@
     <div class="container-fluid content-space-2 px-5">
       <div class="row">
         <div class="col-md-7 col-lg-8">
-          <h3 class="mb-4 display-6 text-white">Features &amp; Benefits</h3>
+          <div data-aos="">
+            <h3 class="mb-4 display-6 text-white">Features &amp; Benefits</h3>
+          </div>
 
           <div class="row">
             <div class="col-lg-6">
               <!-- List Checked -->
-              <ul class="list-checked list-checked-white">
+              <ul class="list-checked list-checked-primary">
                 <li class="list-checked-item text-white">Chemically reactive</li>
                 <li class="list-checked-item text-white">Resists foot traffic abrasion</li>
                 <li class="list-checked-item text-white">Clean panels lift easier, no resin stains</li>
@@ -185,10 +179,8 @@
               <!-- End List Checked -->
             </div>
             <!-- End Col -->
-
             <div class="col-lg-6">
               <!-- List Checked -->
-            
               <!-- End List Checked -->
             </div>
             <!-- End Col -->
@@ -201,14 +193,10 @@
               <h3 class="mb-4 display-6 text-white">Description</h3>
             </div>
 
-            <p class="text-lead"><strong>SpecTilt 100</strong> is a chemically reactive tilt-up bond breaker specially engineered to provide a clean, easy lift of tilt-up panels.</p>
-
-            <p class="text-lead"><strong>SpecTilt 100</strong> contains no diesel, kerosene, waxes, or silicones.</p>
+            <p class="text-lead text-white"><strong>SpecTilt 100</strong> is a chemically reactive tilt-up bond breaker specially engineered to provide a clean, easy lift of tilt-up panels. <strong>SpecTilt 100</strong> contains no diesel, kerosene, waxes, or silicones. <strong>SpecTilt 100</strong> allows clean panels to lift easier, leaves no resin stains, is chemically reactive, and leaves no residue.</p>
           </div>
 
           <!-- End Content -->
-
-          <hr class="my-7">
 
             <!-- Card Grid -->
             <h3 class="mb-4 display-6 text-white">Resources</h3>
@@ -238,89 +226,12 @@
                 </div>
 
                 <div class="tab-pane fade" id="nav-two-eg1" role="tabpanel" aria-labelledby="nav-two-eg1-tab">
-                  <!-- System 7 -->
-                  <ul class="step step-icon-lg">
-                    <li class="step-item">
-                      <div class="step-content-wrapper">
-                        <span class="step-icon step-icon-soft-primary">1</span>
-                        <div class="step-content">
-                          <h4>Prevent: SpecFilm</h4>
-                          <p class="step-text">SpecFilm is designed to be used as an evaporation retardant and finishing aid on concrete flatwork of all types. When sprayed over fresh concrete, SpecFilm forms a thin, continuous film which prevents rapid moisture loss from the concrete surface.</p>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li class="step-item">
-                      <div class="step-content-wrapper">
-                        <span class="step-icon step-icon-soft-primary">2</span>
-                        <div class="step-content">
-                          <h4>Lift: SpecTilt WB</h4>
-                          <p class="step-text">SpecTilt WB is a chemically reactive tilt-up cure and bond breaker specially engineered to provide a clean, easy lift of tilt-up panels.</p>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li class="step-item">
-                      <div class="step-content-wrapper">
-                        <span class="step-icon step-icon-soft-primary">3</span>
-                        <div class="step-content">
-                          <h4>Clean: Orange Peel</h4>
-                          <p class="step-text">Orange Peel concentrate is a cost effective, natural citrus solvent, cleaner, and degreaser. Orange Peel is an innovative cleaning solution for the toughest industrial applications.</p>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li class="step-item">
-                      <div class="step-content-wrapper">
-                        <span class="step-icon step-icon-soft-primary">4</span>
-                        <div class="step-content">
-                          <h4>Seal: SpecHard</h4>
-                          <p class="step-text">SpecHard is a proprietary, colorless chemical solution that increases the wear surface strength of concrete floors subjected to pedestrian and vehicle traffic. SpecHard penetrates concrete surfaces to seal, densify, and harden.</p>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li class="step-item">
-                      <div class="step-content-wrapper">
-                        <span class="step-icon step-icon-soft-primary">5</span>
-                        <div class="step-content">
-                          <h4>Fill: Rapid Flex CJ or SpecPoxy CJ</h4>
-                          <p class="step-text">Our control joint fillers are both engineered to offer strength and protection for your control and construction joints in industrial concrete floors. Both are two-component products, coming in a semi-rigid epoxy or a rapid-curing, fast-setting polyurea.</p>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                <!-- End System 7 -->
+                  @@include("@@autopath/partials/layouts-components/systems/tilt-up-system.html")
                 </div>
 
                 <div class="tab-pane fade" id="nav-three-eg1" role="tabpanel" aria-labelledby="nav-three-eg1-tab">
-                  
-                  <!-- SpecTilt 100 Sierra Const. Video Block 65 -->
-                  <div id="youTubeVideoPlayer65" class="video-player video-player-inline-btn">
-                    <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-spectilt-100-2.png" alt="Image">
-
-                    <!-- Play Button -->
-                    <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                       data-hs-video-player-options='{
-                         "videoId": "vDld69In4h0",
-                         "parentSelector": "#youTubeVideoPlayer65",
-                         "targetSelector": "#youTubeVideoIframe65",
-                         "isAutoplay": true
-                       }'>
-                      <span class="video-player-icon shadow-sm">
-                        <i class="bi-play-fill"></i>
-                      </span>
-                    </a>
-                    <!-- End Play Button -->
-
-                    <!-- Video Iframe -->
-                    <div class="ratio ratio-16x9">
-                      <div id="youTubeVideoIframe65"></div>
-                    </div>
-                    <!-- End Video Iframe -->
-                  </div>
-                </div>
-                <!-- End Video Block 65 -->
+                  @@include("@@autopath/partials/layouts-components/galleries/tilt-up-bond-breakers.html")
+                 
               </div>
             </div>
             <!-- End Tab Content -->
@@ -333,7 +244,7 @@
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- ========== FOOTER ========== -->
-  @@include("@@autopath/partials/footer/variant-5.html")
+  @@include("@@autopath/partials/footer/main-light.html")
   <!-- ========== END FOOTER ========== -->
 
   <!-- ========== SECONDARY CONTENTS ========== -->
@@ -352,6 +263,7 @@
   <script src="@@autopath/assets/vendor/hs-sticky-block/dist/hs-sticky-block.min.js"></script>
   <script src="@@autopath/node_modules/fslightbox/index.js"></script>
   <script src="./node_modules/tom-select/dist/js/tom-select.complete.min.js"></script>
+  <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
 
   <!-- JS Front -->
   <!-- bundlejs:theme [@@autopath] -->
@@ -395,6 +307,13 @@
       new HSStickyBlock('.js-sticky-block', {
         targetSelector: document.getElementById('header').classList.contains('navbar-fixed') ? '#header' : null
       })
+
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
     })()
   </script>
 </body>

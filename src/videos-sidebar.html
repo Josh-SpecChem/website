@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
 </head>
 
-<body>
+<body data-hs-scrollspy-options='{ "target": "#navbarVerticalNavMenuEg3" }'>
   <!-- ========== HEADER ========== -->
   @@include("@@autopath/partials/navbar/double-header.html")
   <!-- ========== END HEADER ========== -->
@@ -58,9 +58,22 @@
         </div>
         <!-- End Navbar Toggle -->
 
+        <!-- Sticky Block -->
+            <div id="stickyBlockStartPoint">
+              <div class="js-sticky-block"
+                   data-hs-sticky-block-options='{
+                     "parentSelector": "#stickyBlockStartPoint",
+                     "breakpoint": "md",
+                     "startPoint": "#stickyBlockStartPoint",
+                     "endPoint": "#stickyBlockEndPoint",
+                     "stickyOffsetTop": 220,
+                     "stickyOffsetBottom": 12
+                   }'>
+
         <!-- Navbar Collapse -->
-        <div id="navbarVerticalNavMenuEg3" class="collapse navbar-collapse">
+        <div id="navbarVerticalNavMenuEg3" class="collapse navbar-collapse js-scrollspy">
           <div id="shopNavCategories" class="nav nav-pills nav-vertical">
+          
             <!-- Collapse
             <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesTwo" aria-expanded="false" aria-controls="shopCategoriesTwo">
               <i class="bi-tv nav-icon"></i> Admixtures & Miscellaneous
@@ -74,47 +87,13 @@
             End Collapse -->
 
             <!-- Collapse -->
-            <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesOne" aria-expanded="false" aria-controls="shopCategoriesOne">
-              </i> Asphalt Patching
-            </a>
-
-            <div id="shopCategoriesOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
-              <div id="shopNavCategoriesOne">
-                <!-- Collapse -->
-                  <a class="nav-link dropdown-toggle collapsed" href="" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesOneSubOne" aria-expanded="false" aria-controls="shopCategoriesOneSubOne">
-                    Max-A-Patch ACP
-                  </a>
-
-                  <div id="shopCategoriesOneSubOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesOne">
-                    <a class="nav-link" href="#max-a-patch-acp">Max-A-Patch ACP 1</a>
-                    <a class="nav-link" href="#">Max-A-Patch ACP 2</a>
-                    <a class="nav-link" href="#">Max-A-Patch ACP 3</a>
-                  </div>
-                  <!-- End Collapse -->
-              </div>
-            </div>
-            <!-- End Collapse -->
-
-            <!-- Collapse -->
-            <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesThree" aria-expanded="false" aria-controls="shopCategoriesThree">
-              </i> Cementitious Grout
-            </a>
-
-            <div id="shopCategoriesThree" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
-              <div id="shopNavCategoriesThree">
-                <a class="nav-link" href="#">SC Precision Grout HS</a>
-              </div>
-            </div>
-            <!-- End Collapse -->
-
-            <!-- Collapse -->
-            <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesFour" aria-expanded="false" aria-controls="shopCategoriesFour">
+            <a class="nav-link dropdown-toggle collapsed active" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesFour" aria-expanded="false" aria-controls="shopCategoriesFour">
               Cleaners & Strippers
             </a>
 
             <div id="shopCategoriesFour" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
               <div id="shopNavCategoriesFour">
-                <a class="nav-link" href="#">SpecBlast</a>
+                <a class="nav-link" href="#specblast">SpecBlast</a>
               </div>
             </div>
             <!-- End Collapse -->
@@ -125,9 +104,9 @@
             </a>
 
             <div id="shopCategoriesFive" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
-              <a class="nav-link" href="#">Cure & Seal WB</a>
-              <a class="nav-link" href="#">SC Cure 500</a>
-              <a class="nav-link" href="#">SpecRez</a>
+              <a class="nav-link" href="#cure-seal-wb">Cure & Seal WB</a>
+              <a class="nav-link" href="#sc-cure-500">SC Cure 500</a>
+              <a class="nav-link" href="#specrez">SpecRez</a>
             </div>
             <!-- End Collapse -->
 
@@ -138,8 +117,8 @@
 
             <div id="shopCategoriesSix" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
               <div id="shopNavCategoriesSix">
-                <a class="nav-link" href="#">Crystal Shine Matte</a>
-                <a class="nav-link" href="#">Deco Shine</a>
+                <a class="nav-link" href="#crystal-shine-matte">Crystal Shine Matte</a>
+                <a class="nav-link" href="#deco-shine">Deco Shine</a>
               </div>
             </div>
             <!-- End Collapse -->
@@ -163,16 +142,7 @@
 
             <div id="shopCategoriesEight" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
               <div id="shopNavCategoriesEight">
-                <!-- Collapse -->
-                <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesEightSubOne" aria-expanded="false" aria-controls="shopCategoriesEightSubOne">
-                  SpecFilm
-                </a>
-
-                <div id="shopCategoriesEightSubOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesEight">
-                  <a class="nav-link" href="#">SpecFilm 1</a>
-                  <a class="nav-link" href="#">SpecFilm 2</a>
-                </div>
-                <!-- End Collapse -->
+                <a class="nav-link" href="#specfilm">SpecFilm</a>
               </div>
             </div>
             <!-- End Collapse -->
@@ -208,7 +178,7 @@
 
             <div id="shopCategoriesEleven" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
               <div id="shopNavCategoriesEleven">
-                <a class="nav-link" href="#">SC Precision Grouts HS</a>
+                <a class="nav-link" href="#sc-precision-grout-hs">SC Precision Grout HS</a>
               </div>
             </div>
             <!-- End Collapse -->
@@ -232,7 +202,7 @@
 
             <div id="shopCategoriesThirteen" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
               <div id="shopNavCategoriesThirteen">
-                <a class="nav-link" href="#">LithSeal SC</a>
+                <a class="nav-link" href="#lithseal-sc">LithSeal SC</a>
               </div>
             </div>
             <!-- End Collapse -->
@@ -244,7 +214,7 @@
 
             <div id="shopCategoriesFourteen" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
               <div id="shopNavCategoriesFourteen">
-                <a class="nav-link" href="#">PaveCure AMS</a>
+                <a class="nav-link" href="#pave-cure-ams">Pave Cure AMS</a>
               </div>
             </div>
             <!-- End Collapse -->
@@ -256,86 +226,18 @@
 
             <div id="shopCategoriesFifteen" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
               <div id="shopNavCategoriesFifteen">
-                <!-- Collapse -->
-                <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesFifteenSubOne" aria-expanded="false" aria-controls="shopCategoriesFifteenSubOne">
-                  Duo Patch
-                </a>
-
-                <div id="shopCategoriesFifteenSubOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesFifteen">
-                  <a class="nav-link" href="#">Duo Patch 1</a>
-                  <a class="nav-link" href="#">Duo Patch 2</a>
-                  <a class="nav-link" href="#">Duo Patch 3</a>
-                </div>
-                <!-- End Collapse -->
-
-                <!-- Collapse -->
-                  <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesFifteenSubTwo" aria-expanded="false" aria-controls="shopCategoriesFifteenSubTwo">
-                    OverCrete
-                  </a>
-
-                  <div id="shopCategoriesFifteenSubTwo" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesFifteen">
-                    <a class="nav-link" href="#">OverCrete 1</a>
-                    <a class="nav-link" href="#">OverCrete 2</a>
-                    <a class="nav-link" href="#">OverCrete 3</a>
-                    <a class="nav-link" href="#">OverCrete 4</a>
-                  </div>
-                  <!-- End Collapse -->
-
-                <a class="nav-link" href="#">Final Finish</a>
-
-                  <!-- Collapse -->
-                  <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesFifteenSubThree" aria-expanded="false" aria-controls="shopCategoriesFifteenSubThree">
-                    RepCon 928
-                  </a>
-
-                  <div id="shopCategoriesFifteenSubThree" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesFifteen">
-                    <a class="nav-link" href="#">RepCon 928 1</a>
-                    <a class="nav-link" href="#">RepCon 928 2</a>
-                    <a class="nav-link" href="#">RepCon 928 3</a>
-                    <a class="nav-link" href="#">Repcon 928 4</a>
-                  </div>
-                  <!-- End Collapse -->
-
-                  <!-- Collapse -->
-                  <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesFifteenSubFour" aria-expanded="false" aria-controls="shopCategoriesFifteenSubFour">
-                    RepCon V/O
-                  </a>
-
-                  <div id="shopCategoriesFifteenSubFour" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesFifteen">
-                    <a class="nav-link" href="#">RepCon V/O 1</a>
-                    <a class="nav-link" href="#">RepCon V/O 2</a>
-                    <a class="nav-link" href="#">RepCon V/O 3</a>
-                  </div>
-                  <!-- End Collapse -->
-
-                  <!-- Collapse -->
-                  <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesFifteenSubFive" aria-expanded="false" aria-controls="shopCategoriesFifteenSubFive">
-                    SpecFlow
-                  </a>
-
-                  <div id="shopCategoriesFifteenSubFive" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesFifteen">
-                    <a class="nav-link" href="#">SpecFlow 1</a>
-                    <a class="nav-link" href="#">SpecFlow 2</a>
-                  </div>
-                  <!-- End Collapse -->
-
-                <a class="nav-link" href="#">SpecLevel PCT</a>
-                <a class="nav-link" href="#">SpecPatch Light</a>
-                <a class="nav-link" href="#">SpecPatch</a>
-                <a class="nav-link" href="#">SpecPlug</a>
-                <a class="nav-link" href="#">SpecRock</a>
-
-                  <!-- Collapse -->
-                  <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesFifteenSubSix" aria-expanded="false" aria-controls="shopCategoriesFifteenSubSix">
-                    SpecShot Plus
-                  </a>
-
-                  <div id="shopCategoriesFifteenSubSix" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesFifteen">
-                    <a class="nav-link" href="#">SpecShot Plus 1</a>
-                    <a class="nav-link" href="#">SpecShot Plus 2</a>
-                    <a class="nav-link" href="#">SpecShot Plus 3</a>
-                  </div>
-                  <!-- End Collapse -->
+                <a class="nav-link" href="#duo-patch">Duo Patch</a>
+                <a class="nav-link" href="#overcrete">OverCrete</a>
+                <a class="nav-link" href="#final-finish">Final Finish</a>
+                <a class="nav-link" href="#repcon-928">RepCon 928</a>
+                <a class="nav-link" href="#repcon-vo">RepCon V/O</a>
+                <a class="nav-link" href="#specflow">SpecFlow</a>
+                <a class="nav-link" href="#speclevel-pct">SpecLevel PCT</a>
+                <a class="nav-link" href="#specpatch-light">SpecPatch Light</a>
+                <a class="nav-link" href="#specpatch">SpecPatch</a>
+                <a class="nav-link" href="#specplug">SpecPlug</a>
+                <a class="nav-link" href="#specrock">SpecRock</a>
+                <a class="nav-link" href="#specshot-plus">SpecShot Plus</a>
               </div>
             </div>
             <!-- End Collapse -->
@@ -347,50 +249,15 @@
 
             <div id="shopCategoriesSixteen" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
               <div id="shopNavCategoriesSixteen">
-                <!-- Collapse -->
-                <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesSixteenSubOne" aria-expanded="false" aria-controls="shopCategoriesSixteenSubOne">
-                    Polyfix
-                </a>
-
-                <div id="shopCategoriesSixteenSubOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesSixteen">
-                  <a class="nav-link" href="#">Polyfix 1</a>
-                  <a class="nav-link" href="#">Polyfix 2</a>
-                  <a class="nav-link" href="#">Polyfix 3</a>
-                  <a class="nav-link" href="#">Polyfix 4</a>
-                </div>
-                <!-- End Collapse -->
-              
-              <a class="nav-link" href="#">Rapid Flex 90</a>
-
-                <!-- Collapse -->
-                <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesSixteenSubTwo" aria-expanded="false" aria-controls="shopCategoriesSixteenSubTwo">
-                    Rapid Flex CJ
-                </a>
-
-                <div id="shopCategoriesSixteenSubTwo" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesSixteen">
-                  <a class="nav-link" href="#">Rapid Flex CJ 1</a>
-                  <a class="nav-link" href="#">Rapid Flex CJ 2</a>
-                  <a class="nav-link" href="#">Rapid Flex CJ 3</a>
-                  <a class="nav-link" href="#">Rapid Flex CJ 4</a>
-                </div>
-                <!-- End Collapse -->
-
-                <a class="nav-link" href="#">SpecPoxy Grout HS</a>
-                  <!-- Collapse -->
-                  <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesSixteenSubThree" aria-expanded="false" aria-controls="shopCategoriesSixteenSubThree">
-                      SpecPoxy Grout
-                  </a>
-                  
-                  <div id="shopCategoriesSixteenSubThree" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesSixteen">
-                    <a class="nav-link" href="#">SpecPoxy Grout 1</a>
-                    <a class="nav-link" href="#">SpecPoxy Grout 2</a>
-                    <a class="nav-link" href="#">SpecPoxy Grout 3</a>
-                  </div>
-                  <!-- End Collapse -->
-                <a class="nav-link" href="#">SpecPoxy Grout System</a>
-                <a class="nav-link" href="#">SpecPoxy 500</a>
-                <a class="nav-link" href="#">SpecPoxy 3000 FS</a>
-                <a class="nav-link" href="#">SpecPoxy 1000</a>
+                <a class="nav-link" href="#poly-fix">Poly Fix</a>
+                <a class="nav-link" href="#rapid-flex-90">Rapid Flex 90</a>
+                <a class="nav-link" href="#rapid-flex-cj">Rapid Flex CJ</a>
+                <a class="nav-link" href="#specpoxy-grout-hs">SpecPoxy Grout HS</a>
+                <a class="nav-link" href="#specpoxy-grout">SpecPoxy Grout</a>
+                <a class="nav-link" href="#specpoxy-grout-system">SpecPoxy Grout System</a>
+                <a class="nav-link" href="#specpoxy-500">SpecPoxy 500</a>
+                <a class="nav-link" href="#specpoxy-3000-fs">SpecPoxy 3000 FS</a>
+                <a class="nav-link" href="#specpoxy-1000">SpecPoxy 1000</a>
               </div>
             </div>
             <!-- End Collapse -->
@@ -414,30 +281,8 @@
 
             <div id="shopCategoriesEighteen" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
               <div id="shopNavCategoriesEighteen">
-                  
-                  <!-- Collapse -->
-                  <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesEighteenSubOne" aria-expanded="false" aria-controls="shopCategoriesEighteenSubOne">
-                    SpecTilt WB
-                  </a>
-
-                  <div id="shopCategoriesEighteenSubOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesEighteen">
-                    <a class="nav-link" href="#">SpecTilt WB 1</a>
-                    <a class="nav-link" href="#">SpecTilt WB 2</a>
-                    <a class="nav-link" href="#">SpecTilt WB 3</a>
-                  </div>
-                  <!-- End Collapse -->
-
-                  <!-- Collapse -->
-                  <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesEighteenSubTwo" aria-expanded="false" aria-controls="shopCategoriesSixteenSubTwo">
-                    SpecTilt 100
-                  </a>
-
-                  <div id="shopCategoriesEighteenSubTwo" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesEighteen">
-                    <a class="nav-link" href="#">SpecTilt 100 1</a>
-                    <a class="nav-link" href="#">SpecTilt 100 2</a>
-                    <a class="nav-link" href="#">SpecTilt 100 3</a>
-                  </div>
-                  <!-- End Collapse -->
+                <a class="nav-link" href="#spectilt-wb">SpecTilt WB</a>
+                <a class="nav-link" href="#spectilt-100">SpecTilt 100</a>
               </div>
             </div>
             <!-- End Collapse -->
@@ -449,17 +294,7 @@
 
             <div id="shopCategoriesNineteen" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
               <div id="shopNavCategoriesNineteen">
-                  <!-- Collapse -->
-                  <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesNineteenSubOne" aria-expanded="false" aria-controls="shopCategoriesNineteenSubOne">
-                    Max-A-Patch ACP
-                  </a>
-
-                  <div id="shopCategoriesNineteenSubOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesNineteen">
-                    <a class="nav-link" href="#">Max-A-Patch ACP 1</a>
-                    <a class="nav-link" href="#">Max-A-Patch ACP 2</a>
-                    <a class="nav-link" href="#">Max-A-Patch ACP 3</a>
-                  </div>
-                  <!-- End Collapse -->
+                <a class="nav-link" href="#max-a-patch-acp">Max-A-Patch ACP</a>
               </div>
             </div>
             <!-- End Collapse -->
@@ -471,17 +306,8 @@
 
             <div id="shopCategoriesTwenty" class="nav-collapse collapse" data-bs-parent="#shopNavCategories">
               <div id="shopNavCategoriesTwenty">
-                  <!-- Collapse -->
-                  <a class="nav-link dropdown-toggle collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#shopCategoriesTwentySubOne" aria-expanded="false" aria-controls="shopCategoriesTwentySubOne">
-                    SpecShield WB
-                  </a>
-
-                  <div id="shopCategoriesTwentySubOne" class="nav-collapse collapse" data-bs-parent="#shopNavCategoriesTwenty">
-                    <a class="nav-link" href="#">SpecShield WB 1</a>
-                    <a class="nav-link" href="#">SpecShield WB 2</a>
-                  </div>
-                  <!-- End Collapse -->
-                <a class="nav-link" href="#">SpecSilane 40 WB</a>
+                <a class="nav-link" href="#specshield-wb">SpecShield WB</a>
+                <a class="nav-link" href="#specsilane-40-wb">SpecSilane 40 WB</a>
               </div>
             </div>
             <!-- End Collapse -->
@@ -491,6 +317,8 @@
       </div>
       <!-- End Navbar -->
       </div>
+    </div>
+  </div>
       
 
       <div class="col-md-9">
@@ -554,7 +382,7 @@
 
         <!-- Deco Shine Video Block 3 -->
         <div class="content-space-2">
-          <h2 id="cure-seal-wb">Deco Shine</h2>
+          <h2 id="deco-shine">Deco Shine</h2>
             <div id="youTubeVideoPlayer3" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="assets/img/thumbnails/yt-Decoshine.png" alt="Image">
 
@@ -583,7 +411,7 @@
 
         <!-- Duo Patch Video Block 4 -->
         <div class="content-space-2">
-          <h2 id="cure-seal-wb">Duo Patch</h2>
+          <h2 id="duo-patch">Duo Patch</h2>
             <div id="youTubeVideoPlayer4" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="assets/img/thumbnails/yt-duopatch.png" alt="Image">
 
@@ -665,7 +493,7 @@
 
         <!-- Final Finish Video Block 7 -->
         <div class="content-space-2">
-          <h2 id="cure-seal-wb">Final Finish</h2>
+          <h2 id="final-finish">Final Finish</h2>
             <div id="youTubeVideoPlayer7" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="assets/img/thumbnails/yt-final-finish.png" alt="Image">
 
@@ -692,9 +520,9 @@
           </div>
         <!-- End Video Block 7 -->
 
-      <div class="col-md-4">
-
         <!-- LithSeal SC Video Block 8 -->
+        <div class="content-space-2">
+          <h2 id="lithseal-sc">LithSeal SC</h2>
             <div id="youTubeVideoPlayer8" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="assets/img/thumbnails/yt-lithseal-sc.png" alt="Image">
 
@@ -721,9 +549,9 @@
           </div>
         <!-- End Video Block 8 -->
 
-      <div class="col-md-4">
-
-        <!-- Max-A-Patch Video Block 9 -->
+        <!-- Max-A-Patch ACP Video Block 9 -->
+        <div class="content-space-2">
+          <h2 id="max-a-patch-acp">Max-A-Patch ACP</h2>
             <div id="youTubeVideoPlayer9" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="assets/img/thumbnails/yt-max-a-patch-acp.png" alt="Image">
 
@@ -750,12 +578,8 @@
           </div>
         <!-- End Video Block 9 -->
 
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
-        <!-- Max-A-Patch-ACP-2 Video Block 10 -->
+        <!-- Max-A-Patch-ACP Video Block 10 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer10" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-max-a-patch-acp-2.png" alt="Image">
 
@@ -782,9 +606,8 @@
           </div>
         <!-- End Video Block 10 -->
 
-      <div class="col-md-4">
-
         <!-- Max-a-patch ACP Video Block 11 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer11" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-max-a-patch-acp-medium.jpg" alt="Image">
 
@@ -811,9 +634,9 @@
           </div>
         <!-- End Video Block 11 -->
 
-      <div class="col-md-4">
-
         <!-- Overcrete Video Block 12 -->
+        <div class="content-space-2">
+          <h2 id="overcrete">OverCrete</h2>
             <div id="youTubeVideoPlayer12" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy-1000.png" alt="Image">
 
@@ -840,12 +663,8 @@
           </div>
         <!-- End Video Block 12 -->
 
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
         <!-- Overcrete 2 Video Block 13 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer13" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/Thumbnails/yt-overcrete.png" alt="Image">
 
@@ -872,9 +691,8 @@
           </div>
         <!-- End Video Block 13 -->
 
-      <div class="col-md-4">
-
         <!-- Overcrete 3 Video Block 14 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer14" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-overcrete-2.png" alt="Image">
 
@@ -901,9 +719,8 @@
           </div>
         <!-- End Video Block 14 -->
 
-      <div class="col-md-4">
-
         <!-- Overcrete 4 Video Block 15 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer15" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-overcrete-3.png" alt="Image">
 
@@ -930,12 +747,9 @@
           </div>
         <!-- End Video Block 15 -->
 
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
-        <!-- PaveCure AMS I-29 Video Block 16 -->
+        <!-- Pave Cure AMS I-29 Video Block 16 -->
+        <div class="content-space-2">
+          <h2 id="pave-cure-ams">Pave Cure AMS</h2>
             <div id="youTubeVideoPlayer16" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-pavecure-ams-i-29.png" alt="Image">
 
@@ -962,9 +776,9 @@
           </div>
         <!-- End Video Block 16 -->
 
-      <div class="col-md-4">
-
-        <!-- PolyFix Video Block 17 -->
+        <!-- Poly Fix Video Block 17 -->
+        <div class="content-space-2">
+          <h2 id="poly-fix">Poly Fix</h2>
             <div id="youTubeVideoPlayer17" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-polyfix.png" alt="Image">
 
@@ -991,9 +805,8 @@
           </div>
         <!-- End Video Block 17 -->
 
-      <div class="col-md-4">
-
-        <!-- PolyFix 2 Video Block 18 -->
+        <!-- Poly Fix 2 Video Block 18 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer18" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-polyfix-2.png" alt="Image">
 
@@ -1020,12 +833,8 @@
           </div>
         <!-- End Video Block 18 -->
 
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
-        <!-- PolyFix 3 Video Block 19 -->
+        <!-- Poly Fix 3 Video Block 19 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer19" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-polyfix-3.png" alt="Image">
 
@@ -1052,9 +861,8 @@
           </div>
         <!-- End Video Block 19 -->
 
-      <div class="col-md-4">
-
-        <!-- PolyFix 4 Video Block 20 -->
+        <!-- Poly Fix 4 Video Block 20 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer20" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-polyfix4.png" alt="Image">
 
@@ -1081,9 +889,9 @@
           </div>
         <!-- End Video Block 20 -->
 
-      <div class="col-md-4">
-
         <!-- Rapid Flex 90 Video Block 21 -->
+        <div class="content-space-2">
+          <h2 id="rapid-flex-90">Rapid Flex 90</h2>
             <div id="youTubeVideoPlayer21" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-rapid-flex-90.png" alt="Image">
 
@@ -1110,12 +918,9 @@
           </div>
         <!-- End Video Block 21 -->
 
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
         <!-- Rapid Flex CJ Video Block 22 -->
+        <div class="content-space-2">
+          <h2 id="rapid-flex-cj">Rapid Flex CJ</h2>
             <div id="youTubeVideoPlayer22" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-rapidflex-cj.png" alt="Image">
 
@@ -1142,9 +947,8 @@
           </div>
         <!-- End Video Block 22 -->
 
-      <div class="col-md-4">
-
         <!-- Rapid Flex CJ 2 Video Block 23 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer23" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-rapidflex-cj-2.png" alt="Image">
 
@@ -1171,9 +975,8 @@
           </div>
         <!-- End Video Block 23 -->
 
-      <div class="col-md-4">
-
-        <!-- Rapid Flex Video Block 24 -->
+        <!-- Rapid Flex CJ Video Block 24 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer24" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-rapid-flexcj-3.png" alt="Image">
 
@@ -1200,12 +1003,8 @@
           </div>
         <!-- End Video Block 24 -->
 
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
         <!-- Rapid Flex CJ Semi-Rigid, Rapid-Curing Video Block 25 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer25" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-rapidflex-cj-4.png" alt="Image">
 
@@ -1232,9 +1031,9 @@
           </div>
         <!-- End Video Block 25 -->
 
-      <div class="col-md-4">
-
         <!-- RepCon 928 Video Block 26 -->
+        <div class="content-space-2">
+          <h2 id="repcon-928">RepCon 928</h2>
             <div id="youTubeVideoPlayer26" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-repcon-928.png" alt="Image">
 
@@ -1261,9 +1060,8 @@
           </div>
         <!-- End Video Block 26 -->
 
-      <div class="col-md-4">
-
         <!-- RepCon 928 2 Video Block 27 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer27" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-repcon-928-3.png" alt="Image">
 
@@ -1290,12 +1088,8 @@
           </div>
         <!-- End Video Block 27 -->
 
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
         <!-- RepCon 928 3 Video Block 28 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer28" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-repcon-928-hf.png" alt="Image">
 
@@ -1322,9 +1116,35 @@
           </div>
         <!-- End Video Block 28 -->
 
-      <div class="col-md-4">
+        <!--  RepCon 928 Video Block 29 -->
+            <div id="youTubeVideoPlayer30" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-repcon-928-3.png" alt="Image">
 
-        <!-- RepCon VO Video Block 29 -->
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "2nSE88F_LNg",
+                   "parentSelector": "#youTubeVideoPlayer30",
+                   "targetSelector": "#youTubeVideoIframe30",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe30"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>
+        <!-- End Video Block 29 -->
+
+        <!-- RepCon VO Video Block 30 -->
+        <div class="content-space-2">
+          <h2 id="repcon-vo">RepCon V/O</h2>
             <div id="youTubeVideoPlayer29" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-repcon-vo.png" alt="Image">
 
@@ -1349,43 +1169,10 @@
               <!-- End Video Iframe -->
             </div>
           </div>
-        <!-- End Video Block 29 -->
-
-      <div class="col-md-4">
-
-        <!--  RepCon 928 Video Block 30 -->
-            <div id="youTubeVideoPlayer30" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-repcon-928-3.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "2nSE88F_LNg",
-                   "parentSelector": "#youTubeVideoPlayer30",
-                   "targetSelector": "#youTubeVideoIframe30",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe30"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>
-          </div>
         <!-- End Video Block 30 -->
 
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
         <!-- RepCon VO Video Block 31 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer31" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-repcon-vo-2.png" alt="Image">
 
@@ -1412,9 +1199,8 @@
           </div>
         <!-- End Video Block 31 -->
 
-      <div class="col-md-4">
-
-        <!-- Concrete Repair Mortar Video Block 32 -->
+        <!-- RepCon V/O Mortar Video Block 32 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer32" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-repcon-vo-3.png" alt="Image">
 
@@ -1441,9 +1227,8 @@
           </div>
         <!-- End Video Block 32 -->
 
-      <div class="col-md-4">
-
         <!-- RepCon VO Video Block 33 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer33" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-repcon-vo-4.png" alt="Image">
 
@@ -1470,581 +1255,8 @@
           </div>
         <!-- End Video Block 33 -->
 
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
-        <!-- SC Cure 500 Video Block 34 -->
-            <div id="youTubeVideoPlayer34" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-sc-cure-500.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "uV_0MgHxbq4",
-                   "parentSelector": "#youTubeVideoPlayer34",
-                   "targetSelector": "#youTubeVideoIframe34",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe34"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>  
-          </div>
-        <!-- End Video Block 34 -->
-
-      <div class="col-md-4">
-
-        <!-- Precision Grout HS Video Block 35 -->
-            <div id="youTubeVideoPlayer35" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-precision-grout-hs.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "07yndrrFC90",
-                   "parentSelector": "#youTubeVideoPlayer35",
-                   "targetSelector": "#youTubeVideoIframe35",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe35"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>
-          </div>
-        <!-- End Video Block 35 -->
-
-      <div class="col-md-4">
-
-        <!-- SpecBlast Video Block 36 -->
-            <div id="youTubeVideoPlayer36" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specblast.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "ygTUTI2JArY",
-                   "parentSelector": "#youTubeVideoPlayer36",
-                   "targetSelector": "#youTubeVideoIframe36",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe36"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>
-          </div>
-        <!-- End Video Block 36 -->
-
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
-        <!-- SpecFilm Video Block 37 -->
-            <div id="youTubeVideoPlayer37" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specfilm.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "i7SO-wvSTpk",
-                   "parentSelector": "#youTubeVideoPlayer37",
-                   "targetSelector": "#youTubeVideoIframe37",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe37"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>  
-          </div>
-        <!-- End Video Block 37 -->
-
-      <div class="col-md-4">
-
-        <!-- SpecFilm 2 Video Block 38 -->
-            <div id="youTubeVideoPlayer38" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specfilm-2.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "rWpfVdzwpZ4",
-                   "parentSelector": "#youTubeVideoPlayer38",
-                   "targetSelector": "#youTubeVideoIframe38",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe38"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>
-          </div>
-        <!-- End Video Block 38 -->
-
-      <div class="col-md-4">
-
-        <!-- SpecFlow Video Block 39 -->
-            <div id="youTubeVideoPlayer39" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specflow-2.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "lk4i5TOgOZU",
-                   "parentSelector": "#youTubeVideoPlayer39",
-                   "targetSelector": "#youTubeVideoIframe39",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe39"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>
-          </div>
-        <!-- End Video Block 39 -->
-
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
-        <!-- SpecFlow 3 Video Block 40 -->
-            <div id="youTubeVideoPlayer40" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specflow-3.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "pUodamTdoY0",
-                   "parentSelector": "#youTubeVideoPlayer40",
-                   "targetSelector": "#youTubeVideoIframe40",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe40"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>  
-          </div>
-        <!-- End Video Block 40 -->
-
-      <div class="col-md-4">
-
-        <!-- SpecLevel PCT Video Block 41 -->
-            <div id="youTubeVideoPlayer41" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-speclevel.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "iE0U3_zYDNI",
-                   "parentSelector": "#youTubeVideoPlayer41",
-                   "targetSelector": "#youTubeVideoIframe41",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe41"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>
-          </div>
-        <!-- End Video Block 41 -->
-
-      <div class="col-md-4">
-
-        <!-- SpecPatch Light Video Block 42 -->
-            <div id="youTubeVideoPlayer42" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpatchlight.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "GSYpCtRERyY",
-                   "parentSelector": "#youTubeVideoPlayer42",
-                   "targetSelector": "#youTubeVideoIframe42",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe42"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>
-          </div>
-        <!-- End Video Block 42 -->
-
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
-        <!-- SpecPatch Video Block 43 -->
-            <div id="youTubeVideoPlayer43" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpatch.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "dLaak_jEarA",
-                   "parentSelector": "#youTubeVideoPlayer43",
-                   "targetSelector": "#youTubeVideoIframe43",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe43"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>  
-          </div>
-        <!-- End Video Block 43 -->
-
-      <div class="col-md-4">
-
-        <!-- SpecPlug Video Block 44 -->
-            <div id="youTubeVideoPlayer44" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specplug.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "MqL_LXPcH2U",
-                   "parentSelector": "#youTubeVideoPlayer44",
-                   "targetSelector": "#youTubeVideoIframe44",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe44"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>
-          </div>
-        <!-- End Video Block 44 -->
-
-      <div class="col-md-4">
-
-        <!-- SpecPoxy Grout HS Video Block 45 -->
-            <div id="youTubeVideoPlayer45" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy-grout-hs.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "KqTLV-sJPWI",
-                   "parentSelector": "#youTubeVideoPlayer45",
-                   "targetSelector": "#youTubeVideoIframe45",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe45"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>
-          </div>
-        <!-- End Video Block 45 -->
-
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
-        <!-- SpecPoxy Grout Video Block 46 -->
-            <div id="youTubeVideoPlayer46" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy-grout.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "5vJyIGmnI3E",
-                   "parentSelector": "#youTubeVideoPlayer46",
-                   "targetSelector": "#youTubeVideoIframe46",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe46"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>  
-          </div>
-        <!-- End Video Block 46 -->
-
-      <div class="col-md-4">
-
-        <!-- SpecPoxy Grout Video Block 47 -->
-            <div id="youTubeVideoPlayer47" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy-grout-2.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "FOjeVMs_VYE",
-                   "parentSelector": "#youTubeVideoPlayer47",
-                   "targetSelector": "#youTubeVideoIframe47",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe47"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>
-          </div>
-        <!-- End Video Block 47 -->
-
-      <div class="col-md-4">
-
-        <!-- SpecPoxy Grout Video Block 48 -->
-            <div id="youTubeVideoPlayer48" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy-grout-3.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "KDXokWA6u2w",
-                   "parentSelector": "#youTubeVideoPlayer48",
-                   "targetSelector": "#youTubeVideoIframe48",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe48"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>
-          </div>
-        <!-- End Video Block 48 -->
-
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
-        <!-- SpecPoxy Grout System Video Block 49 -->
-            <div id="youTubeVideoPlayer49" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy-grout-4.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "cFXOi5v63ak",
-                   "parentSelector": "#youTubeVideoPlayer49",
-                   "targetSelector": "#youTubeVideoIframe49",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe49"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>  
-          </div>
-        <!-- End Video Block 49 -->
-
-      <div class="col-md-4">
-
-        <!-- SpecPoxy 500 Video Block 50 -->
-            <div id="youTubeVideoPlayer50" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy500.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "r_fefj90wrY",
-                   "parentSelector": "#youTubeVideoPlayer50",
-                   "targetSelector": "#youTubeVideoIframe50",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe50"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>
-          </div>
-        <!-- End Video Block 50 -->
-
-      <div class="col-md-4">
-
-        <!-- SpecPoxy Mount Rushmore Video Block 51 -->
-            <div id="youTubeVideoPlayer51" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy-3000-fs.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "FpbxwCsbBlU",
-                   "parentSelector": "#youTubeVideoPlayer51",
-                   "targetSelector": "#youTubeVideoIframe51",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe51"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>
-          </div>
-        <!-- End Video Block 51 -->
-
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
-        <!-- SpecPoxy 1000 Video Bnlock 52 -->
-            <div id="youTubeVideoPlayer52" class="video-player video-player-inline-btn">
-              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy-1000.png" alt="Image">
-
-              <!-- Play Button -->
-              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
-                 data-hs-video-player-options='{
-                   "videoId": "rxD4FEia67o",
-                   "parentSelector": "#youTubeVideoPlayer52",
-                   "targetSelector": "#youTubeVideoIframe52",
-                   "isAutoplay": true
-                 }'>
-                <span class="video-player-icon shadow-sm">
-                  <i class="bi-play-fill"></i>
-                </span>
-              </a>
-              <!-- End Play Button -->
-
-              <!-- Video Iframe -->
-              <div class="ratio ratio-16x9">
-                <div id="youTubeVideoIframe52"></div>
-              </div>
-              <!-- End Video Iframe -->
-            </div>  
-          </div>
-        <!-- End Video Block 52 -->
-
-      <div class="col-md-4">
-
         <!-- RepCon VO Video Block 53 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer53" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/Thumbnails/yt-repcon-vo.png" alt="Image">
 
@@ -2071,9 +1283,556 @@
           </div>
         <!-- End Video Block 53 -->
 
-      <div class="col-md-4">
+        <!-- SC Cure 500 Video Block 34 -->
+        <div class="content-space-2">
+          <h2 id="sc-cure-500">SC Cure 500</h2>
+            <div id="youTubeVideoPlayer34" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-sc-cure-500.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "uV_0MgHxbq4",
+                   "parentSelector": "#youTubeVideoPlayer34",
+                   "targetSelector": "#youTubeVideoIframe34",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe34"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>  
+          </div>
+        <!-- End Video Block 34 -->
+
+        <!-- SC Precision Grout HS Video Block 35 -->
+        <div class="content-space-2">
+          <h2 id="sc-precision-grout-hs">SC Precision Grout HS</h2>
+            <div id="youTubeVideoPlayer35" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-precision-grout-hs.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "07yndrrFC90",
+                   "parentSelector": "#youTubeVideoPlayer35",
+                   "targetSelector": "#youTubeVideoIframe35",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe35"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>
+          </div>
+        <!-- End Video Block 35 -->
+
+        <!-- SpecBlast Video Block 36 -->
+        <div class="content-space-2">
+          <h2 id="specblast">SpecBlast</h2>
+            <div id="youTubeVideoPlayer36" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specblast.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "ygTUTI2JArY",
+                   "parentSelector": "#youTubeVideoPlayer36",
+                   "targetSelector": "#youTubeVideoIframe36",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe36"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>
+          </div>
+        <!-- End Video Block 36 -->
+
+        <!-- SpecFilm Video Block 37 -->
+        <div class="content-space-2">
+          <h2 id="specfilm">SpecFilm</h2>
+            <div id="youTubeVideoPlayer37" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specfilm.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "i7SO-wvSTpk",
+                   "parentSelector": "#youTubeVideoPlayer37",
+                   "targetSelector": "#youTubeVideoIframe37",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe37"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>  
+          </div>
+        <!-- End Video Block 37 -->
+
+        <!-- SpecFilm 2 Video Block 38 -->
+        <div class="content-space-2">
+            <div id="youTubeVideoPlayer38" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specfilm-2.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "rWpfVdzwpZ4",
+                   "parentSelector": "#youTubeVideoPlayer38",
+                   "targetSelector": "#youTubeVideoIframe38",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe38"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>
+          </div>
+        <!-- End Video Block 38 -->
+
+        <!-- SpecFlow Video Block 39 -->
+        <div class="content-space-2">
+          <h2 id="specflow">SpecFlow</h2>
+            <div id="youTubeVideoPlayer39" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specflow-2.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "lk4i5TOgOZU",
+                   "parentSelector": "#youTubeVideoPlayer39",
+                   "targetSelector": "#youTubeVideoIframe39",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe39"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>
+          </div>
+        <!-- End Video Block 39 -->
+
+        <!-- SpecFlow 2 Video Block 40 -->
+        <div class="content-space-2">
+            <div id="youTubeVideoPlayer40" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specflow-3.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "pUodamTdoY0",
+                   "parentSelector": "#youTubeVideoPlayer40",
+                   "targetSelector": "#youTubeVideoIframe40",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe40"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>  
+          </div>
+        <!-- End Video Block 40 -->
+
+        <!-- SpecLevel PCT Video Block 41 -->
+        <div class="content-space-2">
+          <h2 id="speclevel-pct">SpecLevel PCT</h2>
+            <div id="youTubeVideoPlayer41" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-speclevel.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "iE0U3_zYDNI",
+                   "parentSelector": "#youTubeVideoPlayer41",
+                   "targetSelector": "#youTubeVideoIframe41",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe41"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>
+          </div>
+        <!-- End Video Block 41 -->
+
+        <!-- SpecPatch Light Video Block 42 -->
+        <div class="content-space-2">
+          <h2 id="specpatch-light">SpecPatch Light</h2>
+            <div id="youTubeVideoPlayer42" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpatchlight.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "GSYpCtRERyY",
+                   "parentSelector": "#youTubeVideoPlayer42",
+                   "targetSelector": "#youTubeVideoIframe42",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe42"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>
+          </div>
+        <!-- End Video Block 42 -->
+
+        <!-- SpecPatch Video Block 43 -->
+        <div class="content-space-2">
+          <h2 id="specpatch">SpecPatch</h2>
+            <div id="youTubeVideoPlayer43" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpatch.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "dLaak_jEarA",
+                   "parentSelector": "#youTubeVideoPlayer43",
+                   "targetSelector": "#youTubeVideoIframe43",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe43"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>  
+          </div>
+        <!-- End Video Block 43 -->
+
+        <!-- SpecPlug Video Block 44 -->
+        <div class="content-space-2">
+          <h2 id="specplug">SpecPlug</h2>
+            <div id="youTubeVideoPlayer44" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specplug.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "MqL_LXPcH2U",
+                   "parentSelector": "#youTubeVideoPlayer44",
+                   "targetSelector": "#youTubeVideoIframe44",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe44"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>
+          </div>
+        <!-- End Video Block 44 -->
+
+        <!-- SpecPoxy Grout HS Video Block 45 -->
+        <div class="content-space-2">
+          <h2 id="specpoxy-grout-hs">SpecPoxy Grout HS</h2>
+            <div id="youTubeVideoPlayer45" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy-grout-hs.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "KqTLV-sJPWI",
+                   "parentSelector": "#youTubeVideoPlayer45",
+                   "targetSelector": "#youTubeVideoIframe45",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe45"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>
+          </div>
+        <!-- End Video Block 45 -->
+
+        <!-- SpecPoxy Grout Video Block 46 -->
+        <div class="content-space-2">
+          <h2 id="specpoxy-grout">SpecPoxy Grout</h2>
+            <div id="youTubeVideoPlayer46" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy-grout.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "5vJyIGmnI3E",
+                   "parentSelector": "#youTubeVideoPlayer46",
+                   "targetSelector": "#youTubeVideoIframe46",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe46"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>  
+          </div>
+        <!-- End Video Block 46 -->
+
+        <!-- SpecPoxy Grout Video Block 47 -->
+        <div class="content-space-2">
+            <div id="youTubeVideoPlayer47" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy-grout-2.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "FOjeVMs_VYE",
+                   "parentSelector": "#youTubeVideoPlayer47",
+                   "targetSelector": "#youTubeVideoIframe47",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe47"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>
+          </div>
+        <!-- End Video Block 47 -->
+
+        <!-- SpecPoxy Grout Video Block 48 -->
+        <div class="content-space-2">
+            <div id="youTubeVideoPlayer48" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy-grout-3.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "KDXokWA6u2w",
+                   "parentSelector": "#youTubeVideoPlayer48",
+                   "targetSelector": "#youTubeVideoIframe48",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe48"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>
+          </div>
+        <!-- End Video Block 48 -->
+
+        <!-- SpecPoxy Grout System Video Block 49 -->
+        <div class="content-space-2">
+          <h2 id="specpoxy-grout-system">SpecPoxy Grout System</h2>
+            <div id="youTubeVideoPlayer49" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy-grout-4.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "cFXOi5v63ak",
+                   "parentSelector": "#youTubeVideoPlayer49",
+                   "targetSelector": "#youTubeVideoIframe49",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe49"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>  
+          </div>
+        <!-- End Video Block 49 -->
+
+        <!-- SpecPoxy 500 Video Block 50 -->
+        <div class="content-space-2">
+          <h2 id="specpoxy-500">SpecPoxy 500</h2>
+            <div id="youTubeVideoPlayer50" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy500.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "r_fefj90wrY",
+                   "parentSelector": "#youTubeVideoPlayer50",
+                   "targetSelector": "#youTubeVideoIframe50",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe50"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>
+          </div>
+        <!-- End Video Block 50 -->
+
+        <!-- SpecPoxy 3000 FS Block 51 -->
+        <div class="content-space-2">
+          <h2 id="specpoxy-3000-fs">SpecPoxy 3000 FS</h2>
+            <div id="youTubeVideoPlayer51" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy-3000-fs.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "FpbxwCsbBlU",
+                   "parentSelector": "#youTubeVideoPlayer51",
+                   "targetSelector": "#youTubeVideoIframe51",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe51"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>
+          </div>
+        <!-- End Video Block 51 -->
+
+        <!-- SpecPoxy 1000 Video Bnlock 52 -->
+        <div class="content-space-2">
+          <h2 id="specpoxy-1000">SpecPoxy 1000</h2>
+            <div id="youTubeVideoPlayer52" class="video-player video-player-inline-btn">
+              <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specpoxy-1000.png" alt="Image">
+
+              <!-- Play Button -->
+              <a class="js-inline-video-player video-player-btn video-player-centered" href="javascript:;"
+                 data-hs-video-player-options='{
+                   "videoId": "rxD4FEia67o",
+                   "parentSelector": "#youTubeVideoPlayer52",
+                   "targetSelector": "#youTubeVideoIframe52",
+                   "isAutoplay": true
+                 }'>
+                <span class="video-player-icon shadow-sm">
+                  <i class="bi-play-fill"></i>
+                </span>
+              </a>
+              <!-- End Play Button -->
+
+              <!-- Video Iframe -->
+              <div class="ratio ratio-16x9">
+                <div id="youTubeVideoIframe52"></div>
+              </div>
+              <!-- End Video Iframe -->
+            </div>  
+          </div>
+        <!-- End Video Block 52 -->
 
         <!-- SpecRez Video Block 54 -->
+        <div class="content-space-2">
+          <h2 id="specrez">SpecRez</h2>
             <div id="youTubeVideoPlayer54" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specrez.png" alt="Image">
 
@@ -2100,12 +1859,9 @@
           </div>
         <!-- End Video Block 54 -->
 
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
         <!-- SpecRock Video Block 55 -->
+        <div class="content-space-2">
+          <h2 id="specrock">SpecRock</h2>
             <div id="youTubeVideoPlayer55" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specrock.png" alt="Image">
 
@@ -2132,9 +1888,9 @@
           </div>
         <!-- End Video Block 55 -->
 
-      <div class="col-md-4">
-
         <!-- SpecShield WB Video Block 56 -->
+        <div class="content-space-2">
+          <h2 id="specshield-wb">SpecShield WB</h2>
             <div id="youTubeVideoPlayer56" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specshield-wb-2.png" alt="Image">
 
@@ -2161,9 +1917,8 @@
           </div>
         <!-- End Video Block 56 -->
 
-      <div class="col-md-4">
-
         <!-- SpecShield WB Video Block 57 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer57" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specshield-wb.png" alt="Image">
 
@@ -2190,12 +1945,9 @@
           </div>
         <!-- End Video Block 57 -->
 
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
         <!-- SpecShot Plus Video Block 58 -->
+        <div class="content-space-2">
+          <h2 id="specshot-plus">SpecShot Plus</h2>
             <div id="youTubeVideoPlayer58" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specshot-plus-4.png" alt="Image">
 
@@ -2222,9 +1974,8 @@
           </div>
         <!-- End Video Block 58 -->
 
-      <div class="col-md-4">
-
         <!-- SpecShot Plus Finishing Video Block 59 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer59" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specshot-plus-2.png" alt="Image">
 
@@ -2251,9 +2002,8 @@
           </div>
         <!-- End Video Block 59 -->
 
-      <div class="col-md-4">
-
         <!-- SpecShot Plus 3 Video Block 60 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer60" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specshot-plus-3.png" alt="Image">
 
@@ -2280,12 +2030,9 @@
           </div>
         <!-- End Video Block 60 -->
 
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
         <!-- SpecSilane 40 WB Video Block 61 -->
+        <div class="content-space-2">
+          <h2 id="specsilane-40-wb">SpecSilane 40 WB</h2>
             <div id="youTubeVideoPlayer61" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-specshot-plus.png" alt="Image">
 
@@ -2312,9 +2059,9 @@
           </div>
         <!-- End Video Block 61 -->
 
-      <div class="col-md-4">
-
         <!-- SpecTilt WB 2 Video Block 62 -->
+        <div class="content-space-2">
+          <h2 id="spectilt-wb">SpecTilt WB</h2>
             <div id="youTubeVideoPlayer62" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-spectilt-wb.png" alt="Image">
 
@@ -2341,9 +2088,8 @@
           </div>
         <!-- End Video Block 62 -->
 
-      <div class="col-md-4">
-
         <!-- SpecTilt wb Video Block 63 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer63" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-spectilt-wb.png" alt="Image">
 
@@ -2370,12 +2116,8 @@
           </div>
         <!-- End Video Block 63 -->
 
-</div>
-
-    <div class="row mt-7">
-      <div class="col-md-4">
-
         <!-- SpecTilt WB Video Block 64 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer64" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-spectilt-wb-3.png" alt="Image">
 
@@ -2402,9 +2144,9 @@
           </div>
         <!-- End Video Block 64 -->
 
-      <div class="col-md-4">
-
         <!-- SpecTilt 100 Sierra Const. Video Block 65 -->
+        <div class="content-space-2">
+          <h2 id="spectilt-100">SpecTilt 100</h2>
             <div id="youTubeVideoPlayer65" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-spectilt-100-2.png" alt="Image">
 
@@ -2431,9 +2173,8 @@
           </div>
         <!-- End Video Block 65 -->
 
-      <div class="col-md-4">
-
         <!-- SpecTilt 100 Video Block 66 -->
+        <div class="content-space-2">
             <div id="youTubeVideoPlayer66" class="video-player video-player-inline-btn">
               <img class="img-fluid video-player-preview" src="../assets/img/thumbnails/yt-spectilt-100-2.png" alt="Image">
 
@@ -2463,7 +2204,7 @@
 </div>
 
 
-
+<div id="stickyBlockEndPoint"></div>
         
 
 
@@ -2474,7 +2215,7 @@
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- ========== FOOTER ========== -->
-  @@include("@@autopath/partials/footer/main-dark-sc.html")
+  @@include("@@autopath/partials/footer/variant-5.html")
   <!-- ========== END FOOTER ========== -->
 
   <!-- ========== SECONDARY CONTENTS ========== -->
@@ -2490,12 +2231,14 @@
 
   <!-- JS Implementing Plugins -->
   <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
   <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
   <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
-  <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-sticky-block/dist/hs-sticky-block.min.js"></script>
+  <script src="@@autopath/node_modules/fslightbox/index.js"></script>
   <script src="./node_modules/tom-select/dist/js/tom-select.complete.min.js"></script>
-  <script src="../assets/vendor/hs-video-player/dist/hs-video-player.min.js"></script>
-  <script src="./node_modules/shufflejs/dist/shuffle.js"></script>
+  <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
+  <script src="../assets/vendor/hs-scrollspy/dist/hs-scrollspy.min.js"></script>
 
   <!-- JS Front -->
   <!-- bundlejs:theme [@@autopath] -->
@@ -2506,6 +2249,11 @@
   <!-- JS Plugins Init. -->
   <script>
     (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
       // INITIALIZATION OF MEGA MENU
       // =======================================================
       new HSMegaMenu('.js-mega-menu', {
@@ -2529,70 +2277,29 @@
     HSCore.components.HSTomSelect.init('.js-select')
 
 
-    // INITIALIZATION OF VIDEO PLAYER
-    // =======================================================
-    new HSVideoPlayer('.js-inline-video-player')
-
-    
-    // INITIALIZATION OF SHUFFLE
-    // =======================================================
-    class ShufflePorfolio {
-      constructor(element) {
-        this.element = element;
-        this.shuffle = new Shuffle(element, {
-          itemSelector: '.js-shuffle-item',
-          speed: 500
-        })
-
-        this.addFilterButtons()
-      }
-
-      addFilterButtons() {
-        const options = document.querySelector('.js-filter-options')
-        if (!options) {
-          return
-        }
-
-        const filterButtons = Array.from(options.children)
-        const onClick = this._handleFilterClick.bind(this)
-        filterButtons.forEach((button) => {
-          button.addEventListener('click', onClick, false)
-        });
-      }
-
-      _handleFilterClick(evt) {
-        const btn = evt.currentTarget.firstElementChild
-        const isActive = btn.classList.contains('active')
-        const btnGroup = btn.getAttribute('data-group')
-
-        this._removeActiveClassFromChildren(btn.parentNode.parentNode)
-
-        let filterGroup
-        if (isActive) {
-          btn.classList.remove('active')
-          filterGroup = Shuffle.ALL_ITEMS
-        } else {
-          btn.classList.add('active')
-          filterGroup = btnGroup
-        }
-
-        this.shuffle.filter(filterGroup)
-      }
-
-      _removeActiveClassFromChildren(parent) {
-        const { children } = parent
-        for (let i = children.length - 1; i >= 0; i--) {
-          children[i].firstElementChild.classList.remove('active')
-        }
-      }
-    }
-
-    new ShufflePorfolio(document.querySelector('.js-shuffle'))
-
-
-      // INITIALIZATION OF NAV SCROLLER
+      // INITIALIZATION OF STICKY BLOCKS
       // =======================================================
-      new HsNavScroller('.js-nav-scroller')
+      new HSStickyBlock('.js-sticky-block', {
+        targetSelector: document.getElementById('header').classList.contains('navbar-fixed') ? '#header' : null
+      })
+
+      // INITIALIZATION OF SCROLLSPY
+    // =======================================================
+    new bootstrap.ScrollSpy(document.body, {
+      target: '#navbarVerticalNavMenuEg3',
+      offset: 10
+    })
+
+    new HSScrollspy('#navbarVerticalNavMenuEg3', {
+      breakpoint: 'lg'
+    })
+
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
     })()
   </script>
 </body>
