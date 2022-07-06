@@ -1,41 +1,14 @@
-<!-- Socials -->
-<div class="d-xs-block d-sm-block d-md-block d-lg-none mx-auto">
-<ul class="sm-icons list-inline">
-  <li class="list-inline-item mx-auto">
-    <a class="btn btn-outline-primary btn-xs btn-icon rounded-3" href="#">
-      <i class="bi-facebook"></i>
-    </a>
-  </li>
-  <li class="list-inline-item mx-auto">
-    <a class="btn btn-outline-primary btn-xs btn-icon rounded-3" href="#">
-      <i class="bi-twitter"></i>
-    </a>
-  </li>
-  <li class="list-inline-item mx-auto">
-    <a class="btn btn-outline-primary btn-xs btn-icon rounded-3" href="#">
-      <i class="bi-linkedin"></i>
-    </a>
-  </li>
-  <li class="list-inline-item mx-auto">
-    <a class="btn btn-outline-primary btn-xs btn-icon rounded-3" href="#">
-      <i class="bi-youtube"></i>
-    </a>
-  </li>
-</ul>
-</div>
-<!-- End Socials -->
-
 <!-- Products -->
 <li class="hs-has-mega-menu nav-item">
-  <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+  <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle text-white" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
 
   <!-- Mega Menu -->
-  <div class="hs-mega-menu dropdown-menu w-100" aria-labelledby="pagesMegaMenu">
+  <div class="hs-mega-menu dropdown-menu w-100 bg-dark" aria-labelledby="pagesMegaMenu">
     <div class="navbar-dropdown-menu-inner">
       <div class="row pb-3">
         <div class="col"></div>
         <div class="col text-center">
-          <a class="link link-dark dropdown-item @@if(link=='page-about.html'){active}" href="@@autopath/products.html">All Products</a>
+          <a class="link dropdown-item @@if(link=='page-about.html'){active}" href="@@autopath/products.html">All Products</a>
         </div>
         <div class="col"></div>
       </div>
@@ -75,16 +48,16 @@
     </div>
 
     <!-- Mega Menu Banner -->
-    <div class="navbar-dropdown-menu-shop-banner pt-3">
+    <div class="navbar-dropdown-menu-shop-banner pt-3 mb-1">
       <div class="d-flex">
         <div class="flex-shrink-0">
-          <img class="navbar-dropdown-menu-shop-banner-img" src="../assets/img/specchem/app.png" alt="Image Description">
+          <img class="navbar-dropdown-menu-shop-banner-img ps-3" src="../assets/img/specchem/app.png" alt="Image Description">
         </div>
 
         <div class="flex-grow-1 p-4">
           <span class="h4 d-block text-primary">SpecChem App</span>
           <p>Download our popular SpecChem app for all devices.</p>
-          <a class="btn btn-sm btn-soft-primary btn-transition" href="#">Learn more <i class="bi-chevron-right small"></i></a>
+          <a class="btn btn-sm btn-dark btn-transition" href="#">Learn more <i class="bi-chevron-right small"></i></a>
 
         </div>
       </div>
@@ -98,15 +71,15 @@
 
 <!-- Sales Tools -->
 <li class="hs-has-sub-menu nav-item">
-  <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle @@if(category=='company'){active}" href="#" role="button" aria-expanded="false">Sales Tools</a>
+  <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle @@if(category=='company'){active} text-white" href="#" role="button" aria-expanded="false">Sales Tools</a>
 
   <!-- Mega Menu -->
-  <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
+  <div class="hs-sub-menu dropdown-menu bg-dark" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
     <a class="dropdown-item @@if(link=='dot-approvals.html'){active}" href="@@autopath/dot-approvals.html">Dot Approvals</a>
     <div class="hs-has-sub-menu nav-item">
       <a id="authenticationMegaMenu" class="hs-mega-menu-invoker dropdown-item dropdown-toggle @@if(subcategory=='authentication'){active}" href="#" role="button" aria-expanded="false">Product Calculators</a>
 
-      <div class="hs-sub-menu dropdown-menu" aria-labelledby="authenticationMegaMenu" style="min-width: 14rem;">
+      <div class="hs-sub-menu dropdown-menu bg-dark" aria-labelledby="authenticationMegaMenu" style="min-width: 14rem;">
         <a class="dropdown-item @@if(link=='page-login.html'){active}" href="@@autopath/epoxy-calculator.html">Epoxy Calculator</a>
         <a class="dropdown-item @@if(link=='page-signup.html'){active}" href="@@autopath/cementitious-calculator.html">Cementitious Calculator</a>
       </div>
@@ -121,10 +94,10 @@
 
 <!-- Company -->
 <li class="hs-has-sub-menu nav-item">
-  <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle @@if(category=='company'){active}" href="#" role="button" aria-expanded="false">Company</a>
+  <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle @@if(category=='company'){active} text-white" href="#" role="button" aria-expanded="false">Company</a>
 
   <!-- Mega Menu -->
-  <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
+  <div class="hs-sub-menu dropdown-menu bg-dark" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
 
     <a class="dropdown-item @@if(link=='systems.html'){active}" href="@@autopath/company.html">About</a>
     <a class="dropdown-item @@if(link=='dot-approvals.html'){active}" href="@@autopath/careers.html">Careers</a>
@@ -137,12 +110,12 @@
 
 <!--- Projects -->
 <li class="nav-item">
-  <a class="nav-link" href="projects.html">Projects</a>
+  <a class="nav-link text-white bg-dark" href="projects.html">Projects</a>
 </li>
 <!-- End Projects -->
 
 <!--- Blog -->
 <li class="nav-item">
-  <a class="nav-link" href="blog.html">Blog</a>
+  <a class="nav-link text-white bg-dark" href="blog.html">Blog</a>
 </li>
 <!-- End Blog -->
