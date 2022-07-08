@@ -408,6 +408,7 @@
 
   <!-- JS Implementing Plugins -->
   <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
   <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
   <script src="@@autopath/assets/vendor/prism/prism.js"></script>
   <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
@@ -420,6 +421,10 @@
   <!-- JS Plugins Init. -->
   <script>
     (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
       // INITIALIZATION OF GO TO
       // =======================================================
       new HSGoTo('.js-go-to')

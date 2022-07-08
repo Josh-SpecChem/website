@@ -34,29 +34,28 @@
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     
-
     <!-- Categories Section -->
-    <div class="container content-space-t-1 content-space-t-md-2 content-space-b-2">
-      <div class="row">
-        <div class="col-lg-3 mb-5 mb-lg-0">
-          <!-- Navbar -->
-          <div class="navbar-expand-lg">
-            <!-- Navbar Toggle -->
-            <div class="d-grid">
-              <button type="button" class="navbar-toggler btn btn-white mb-3" data-bs-toggle="collapse" data-bs-target="#navbarVerticalNavMenu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarVerticalNavMenu">
-                <span class="d-flex justify-content-between align-items-center">
-                  <span class="text-dark">Menu</span>
+      <div class="container content-space-t-1 content-space-t-md-2 content-space-b-2">
+        <div class="row">
+          <div class="col-lg-3 mb-5 mb-lg-0">
+            <!-- Navbar -->
+            <div class="navbar-expand-lg">
+              <!-- Navbar Toggle -->
+              <div class="d-grid">
+                <button type="button" class="navbar-toggler btn btn-white mb-3" data-bs-toggle="collapse" data-bs-target="#navbarVerticalNavMenu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarVerticalNavMenu">
+                  <span class="d-flex justify-content-between align-items-center">
+                    <span class="text-dark">Menu</span>
 
-                  <span class="navbar-toggler-default">
-                    <i class="bi-list"></i>
-                  </span>
+                    <span class="navbar-toggler-default">
+                      <i class="bi-list"></i>
+                    </span>
 
-                  <span class="navbar-toggler-toggled">
-                    <i class="bi-x"></i>
+                    <span class="navbar-toggler-toggled">
+                      <i class="bi-x"></i>
+                    </span>
                   </span>
-                </span>
-              </button>
-            </div>
+                </button>
+              </div>
             <!-- End Navbar Toggle -->
 
             <!-- Navbar Collapse -->
@@ -152,6 +151,7 @@
 
   <!-- JS Implementing Plugins -->
   <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
   <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
   <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
   <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
@@ -167,6 +167,10 @@
   <!-- JS Plugins Init. -->
   <script>
     (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+      
       // INITIALIZATION OF MEGA MENU
       // =======================================================
       new HSMegaMenu('.js-mega-menu', {

@@ -33,325 +33,71 @@
 
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
-    <!--<div class="position-relative">-->
-
+      
     <!-- Breadcrumb -->
-      <div class="bg-light">
-        <div class="container py-4 mt-8 w-100">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0">
-              <li class="breadcrumb-item">
-                <a href="@@autopath/products.html" class="zi-998 stretched-link position-relative">Products</a>
-              </li>
-              <li class="breadcrumb-item">
-                <a href="@@autopath/decorative-concrete-sealers.html" class="zi-998 stretched-link position-relative">Decorative &amp; Protective Sealers</a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">Deco Shine</li>
-            </ol>
-          </nav>
-        </div>
-      </div>
+      @@include("@@autopath/partials/layouts-components/breadcrumbs/product.html", {
+        "category": "Decorative & Protective Sealers",
+        "category-link": "@@autopath/decorative-concrete-sealers.html",
+        "product": "Deco Shine"
+      })
     <!-- End Breadcrumb -->
 
     <!-- Hero -->
-      <div class="bg-img-center" style="background-image: url(@@autopath/assets/img/specchem/products/decorative-and-protective-sealers/hero/decorative-protective-sealers-hero-fullscreen-dark.png">
-        <div class="container content-space-2 content-space-lg-3">
-          <div class="w-md-65 w-lg-50">
-            <div class="mb-4">
-              <h1 class="text-white text-cap-lg">Deco Shine</h1>
-              <h3 class="text-white ps-2">High-gloss protective exterior sealer</h3>
-            </div>
-          </div>
-        </div>
-      </div>
+      @@include("@@autopath/partials/layouts-components/heroes/product.html", {
+        "product": "Deco Shine",
+        "tagline": "High-gloss protective exterior sealer",
+        "image": "@@autopath/assets/img/specchem/products/decorative-and-protective-sealers/hero/decorative-protective-sealers-hero-fullscreen-dark.png"
+      })
     <!-- End Hero -->
 
     <!-- Data Sheets -->
-      <div class="container-fluid py-3 bg-dark position-relative">
-        <div class="w-md-50 w-lg-75">
-          <div class="d-flex gap-3 justify-content-evenly">
-            <div class="">
-              <div class="h3 pt-4 text-white">Data Sheets:</div>
-            </div>
-            <div class="card card-flush card-transition bg-dark zi-998" style="position: relative;">
-              <a class="px-3 stretched-link" download="/assets/data-sheets/tech/Deco-Shine-Tech-Sheet1.pdf" href="assets/img/specchem/icons/tds-pdf-icon-yellow.png" title="All Shield EX Technical Data Sheet PDF" style="position: relative;">
-                <img src="assets/img/specchem/icons/tds-pdf-icon-yellow.png" alt="Card image cap" style="max-height:72px; max-width: 72px;">
-              </a>
-            </div>
-            <div class="card card-flush card-transition bg-dark zi-998" style="position: relative;">
-              <a class="px-3 stretched-link" download="/assets/data-sheets/tech/Deco-Shine-Tech-Sheet1.pdf" href="assets/img/specchem/icons/sds-pdf-icon-yellow.png" title="All Shield EX Technical Data Sheet PDF">
-                <img src="assets/img/specchem/icons/sds-pdf-icon-yellow.png" alt="Card image cap" style="max-height:72px; max-width: 72px;">
-              </a>
-            </div>
-            <div class="card card-flush card-transition bg-dark zi-998" style="position: relative;">
-            <a class="px-3 stretched-link" download="/assets/data-sheets/tech/Deco-Shine-Tech-Sheet1.pdf" href="assets/img/specchem/icons/sell-pdf-icon-yellow.png" title="All Shield EX Technical Data Sheet PDF" style="position: relative;">
-              <img src="assets/img/specchem/icons/sell-pdf-icon-yellow.png" alt="Card image cap" style="max-height:72px; max-width: 72px;">
-            </a>
-          </div>
-          </div>
-        </div>
-      </div>
+      @@include("@@autopath/partials/layouts-components/data-sheets/product.html", {
+        "techsheet": "@@autopath/assets/data-sheets/tech/Deco-Shine-Tech-Sheet1.pdf",
+        "techtitle": "Deco Shine Tech Sheet PDF",
+        "safetysheet": "@@autopath/assets/data-sheets/safety/Deco-Shine-Tech-Sheet1.pdf",
+        "safetytitle": "Deco Shine Safety Sheet PDF",
+        "sellsheet": "@@autopath/assets/data-sheets/sell-sheets/Deco-Shine-Tech-Sheet1.pdf",
+        "selltitle": "Deco Shine Sell Sheet PDF",
+      })
     <!-- End Data Sheets -->
 
     <!-- Sidebar -->
-      <div class="container-fluid content-space-t-md-5 content-space-t-lg-6 position-md-absolute top-0 start-0 end-0">
-        <div class="row justify-content-end">
-          <div class="col-md-5 col-lg-4 position-relative zi-2 mb-1 mb-md-0">
-            
-            <!-- Sticky Block -->
-              <div id="stickyBlockStartPoint">
-                <div class="js-sticky-block"
-                     data-hs-sticky-block-options='{
-                       "parentSelector": "#stickyBlockStartPoint",
-                       "breakpoint": "md",
-                       "startPoint": "#stickyBlockStartPoint",
-                       "endPoint": "#stickyBlockEndPoint",
-                       "stickyOffsetTop": 220,
-                       "stickyOffsetBottom": 12
-                     }'>
-
-                <!-- Card -->
-                  <div class="card card-flush card-transition p-3 shadow">
-                    <p class="text-center text-muted">Available in 1, 5, or 55 gal units</p>
-                    <div class="position-relative mx-auto">
-                      <a class="video-player video-player-btn" href="https://www.youtube.com/watch?v=RnjxvHA7tlk&t=1s" role="button" data-fslightbox="youtube-video">
-                        <img class="card-img-top img-fluid" src="../assets/img/specchem/products/decorative-and-protective-sealers/800x800/deco-shine.png" alt="Card image cap" style="height:300px; width:300px;">
-                        <div class="position-absolute top-50 start-50 translate-middle">
-                          <span class="video-player-icon shadow bg-light">
-                            <i class="bi-play-fill text-dark"></i>
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="card-body">
-                      <div class="d-grid mb-5">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Ask a Sealer Expert</button>
-
-                        <!-- Modal -->
-                <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <!-- Header -->
-                      <div class="modal-close">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <!-- End Header -->
-
-                    <!-- Form -->
-                    <form id="contact-form">
-                      <div class="row gx-3">
-                        <div class="col-sm-6">
-                          <!-- Form -->
-                          <div class="mb-3">
-                            <label class="form-label" for="hireUsFormFirstName">First name</label>
-                            <input type="text" class="form-control form-control-lg" name="hireUsFormNameFirstName" id="firstname" placeholder="First name" aria-label="First name">
-                          </div>
-                          <!-- End Form -->
-                        </div>
-                        <!-- End Col -->
-
-                        <div class="col-sm-6">
-                          <!-- Form -->
-                          <div class="mb-3">
-                            <label class="form-label" for="hireUsFormLasttName">Last name</label>
-                            <input type="text" class="form-control form-control-lg" name="hireUsFormNameLastName" id="lastname" placeholder="Last name" aria-label="Last name">
-                          </div>
-                          <!-- End Form -->
-                        </div>
-                        <!-- End Col -->
-                      </div>
-                      <!-- End Row -->
-
-                      <div class="row gx-3">
-                        <div class="col-sm-6">
-                          <!-- Form -->
-                          <div class="mb-3">
-                            <label class="form-label" for="hireUsFormWorkEmail">Email address</label>
-                            <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="email@site.com" aria-label="email@site.com">
-                          </div>
-                          <!-- End Form -->
-                        </div>
-                        <!-- End Col -->
-
-                        <div class="col-sm-6">
-                          <!-- Form -->
-                          <div class="mb-3">
-                            <label class="form-label" for="hireUsFormPhone">Phone <span class="form-label-secondary">(Optional)</span></label>
-                            <input type="text" class="form-control form-control-lg" name="phone" id="phone" placeholder="(###)###-####" aria-label="(###)###-####">
-                          </div>
-                          <!-- End Form -->
-                        </div>
-                        <!-- End Col -->
-                      </div>
-                      <!-- End Row -->
-
-                      <!-- Form -->
-                      <div class="mb-3">
-                        <label class="form-label" for="hireUsFormDetails">Message</label>
-                        <textarea class="form-control form-control-lg" name="message" id="message" placeholder="How can we help?" aria-label="How can we help?" rows="4"></textarea>
-                      </div>
-                      <!-- End Form -->
-
-                      <div class="d-grid">
-                        <button type="submit" id="form-submit" class="btn btn-primary btn-lg">Send</button>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                      </div>
-
-                      <div class="text-center">
-                        <p class="form-text">We'll get back to you in 1-2 business days.</p>
-                      </div>
-                    </form>
-                    <!-- End Form -->
-                  </div>
-                </div>
-              </div>
-              <!-- End Modal -->
-
-                      </div>
-                      <!-- Subscribe -->
-                      <div class="container content-space-1">
-                        <div class="w-100 text-center mx-md-auto">
-                          <div class="row justify-content-lg-between">
-                            <!-- Heading -->
-                            <div class="mb-3">
-                              <h4>Join Our Mailing List:</h4>
-                            </div>
-                            <!-- End Heading -->
-
-                            <form>
-                              <!-- Input Card -->
-                              <div class="input-card card-transition input-card-sm border mb-3 shadow-xl">
-                                <div class="input-card-form">
-                                  <label for="subscribeFormEg1" class="form-label visually-hidden">Enter email</label>
-                                  <input type="text" class="form-control form-control-lg" id="subscribeFormEg1" placeholder="Enter email" aria-label="Enter email">
-                                </div>
-                                <button type="button" class="btn darkblue-900 text-white btn-lg">Get started</button>
-                              </div>
-                              <!-- End Input Card -->
-                            </form>
-
-                            <div class="">
-                              <h4 class="mt-5 mb-3">Downloads:</h4>
-                              <div class="card card-flush card-transition shadow-xl pt-3">
-                                <a class="px-3 stretched-link" download="/assets/data-sheets/tech/Deco-Shine-Tech-Sheet1.pdf" href="assets/img/specchem/icons/tds-pdf-icon-yellow.png" title="All Shield EX Technical Data Sheet PDF" style="position: relative;">
-                                  <img class="img-fluid rounded-3" src="../assets/img/specchem/app.png" alt="Card image cap" style="height:150px; width:150px;">
-                                </a>
-                              </div>
-                              <div class="card card-flush card-transition shadow-xl mt-3 pb-3">
-                                <a class="px-3 stretched-link" download="/assets/data-sheets/tech/Deco-Shine-Tech-Sheet1.pdf" href="assets/img/specchem/icons/tds-pdf-icon-yellow.png" title="All Shield EX Technical Data Sheet PDF" style="position: relative;">
-                                  <img class="img-fluid mt-3 rounded-2" src="../assets/img/specchem/specguide.png" alt="Card image cap" style="height:150px; width:150px;">
-                                </a>
-                              </div>
-                            </div>
-
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Subscribe -->
-                    </div>
-                  </div>
-                <!-- End Card -->
-                </div>
-              </div>
-              <!-- End Sticky Block -->
-            </div>
-          </div>
-        </div>
-      <!-- End Sidebar -->
+      @@include("@@autopath/partials/layouts-components/product-sidebar/product.html", {
+          "available": "Available in 1, 5, or 55 gal units",
+          "video": "https://www.youtube.com/watch?v=RnjxvHA7tlk&t=1s",
+          "productimage": "@@autopath/assets/img/specchem/products/decorative-and-protective-sealers/800x800/deco-shine.png",
+          "cta-contact": "Ask a Sealer Expert",
+        })
+    <!-- End Sidebar -->
 
     <!-- Features & Benefits -->
-      <div class="container-fluid content-space-2 px-5">
-        <div class="row">
-          <div class="col-md-7 col-lg-8">
-            <div data-aos="">
-              <h3 class="mb-4 display-6">Features &amp; Benefits</h3>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-6">
-                <!-- List Checked -->
-                <ul class="list-checked list-checked-primary">
-                  <li class="list-checked-item">Available in a matte finish</li>
-                  <li class="list-checked-item">Excellent blush resistance in damp areas</li>
-                  <li class="list-checked-item">Will not yellow under ultraviolet exposure</li>
-                </ul>
-                <!-- End List Checked -->
-              </div>
-              <!-- End Col -->
-              <div class="col-lg-6">
-                <!-- List Checked -->
-                  <ul class="list-checked list-checked-primary">
-                    <li class="list-checked-item">Dust proofs concrete with a tough, durable film</li>
-                    <li class="list-checked-item">Seals all concrete surfaces, providing a glossy appearance and easier cleanup</li>
-                    <li class="list-checked-item">Provides a totally clear membrane for new or old concrete for improved durability</li>
-                </ul>
-                <!-- End List Checked -->
-              </div>
-              <!-- End Col -->
-            </div>
-            <!-- End Row -->
-          </div>
-        </div>
-      </div>
+      @@include("@@autopath/partials/layouts-components/features/product.html", {
+            "feature1": "Available in a matte finish",
+            "feature2": "Excellent blush resistance in damp areas",
+            "feature3": "Provides a totally clear membrane for new or old concrete for improved durability",
+            "feature4": "Will not yellow under ultraviolet exposure",
+            "feature5": "Dust proofs concrete with a tough, durable film",
+            "feature6": "Seals all concrete surfaces, providing a glossy appearance and easier cleanup"
+          })
     <!-- End Features & Benefits -->
           
     <!-- Description -->
-      <div class="container-fluid content-space-2 darkblue-900 text-white px-5">
-        <div class="row">
-          <div class="col-md-7 col-lg-8">
-            <div class="mb-4">
-              <h3 class="mb-4 display-6 text-white">Description</h3>
-            </div>
-
-            <p><strong>Deco Shine</strong> is a methacrylate cure and sealer developed specifically for exterior applications, including exposed aggregate and other decorative concrete surfaces.</p>
-            
-            <p><strong>Deco Shine</strong> provides a clear protective coating that brings out the radiance and luster of all-natural aggregate and presserves a long-lasting, durable finish -- ideal for stained concrete, exposed aggregate slabs, walkways, swimming pool decks, and walls.</p> 
-          </div>
-        </div>
-      </div>
+      @@include("@@autopath/partials/layouts-components/description/product.html", {
+              "text": "<p class=\"text-lead\"><strong>Deco Shine</strong> is a methacrylate cure and sealer developed specifically for exterior applications, including exposed aggregate and other decorative concrete surfaces.</p><p class=\"text-lead\"><strong>Deco Shine</strong> provides a clear protective coating that brings out the radiance and luster of all-natural aggregate and presserves a long-lasting, durable finish -- ideal for stained concrete, exposed aggregate slabs, walkways, swimming pool decks, and walls.</p>"
+            })
     <!-- End Description -->
 
     <!-- Resources -->
-      <div class="container-fluid content-space-2 px-5">
-        <div class="row">
-          <div class="col-md-7 col-lg-8">
-            <h3 class="mb-4 display-6">Resources</h3>
-
-            <!-- Nav -->
-              <div class="">
-                <ul class="nav nav-segment nav-pills mb-7 nav-fill" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" id="nav-one-eg1-tab" href="#nav-one-eg1" data-bs-toggle="pill" data-bs-target="#nav-one-eg1" role="tab" aria-controls="nav-one-eg1" aria-selected="true">Comparison</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="nav-two-eg1-tab" href="#nav-two-eg1" data-bs-toggle="pill" data-bs-target="#nav-two-eg1" role="tab" aria-controls="nav-two-eg1" aria-selected="false">Gallery</a>
-                  </li>
-                </ul>
-              </div>
-            <!-- End Nav -->
-
-              <!-- Tab Content -->
-                <div class="tab-content">
-                  <div class="tab-pane fade show active" id="nav-one-eg1" role="tabpanel" aria-labelledby="nav-one-eg1-tab">
-                    <div>
-                      @@include("@@autopath/partials/layouts-components/tables/crossover/protective-sealers.html")
-                    </div>
-                  </div>
-
-                  <div class="tab-pane fade" id="nav-two-eg1" role="tabpanel" aria-labelledby="nav-two-eg1-tab">
-                    @@include("@@autopath/partials/layouts-components/galleries/decorative-and-protective-sealers.html")
-                   
-                </div>
-              </div>
-            <!-- End Tab Content -->
-            
-            </div>
-          </div>
-        </div>
+      @@include("@@autopath/partials/layouts-components/resources/product.html")
+    <!-- End Resources -->
           
-      <!-- Sticky Block End Point -->
-        <div id="stickyBlockEndPoint"></div>
+    <!-- Sticky Block End Point -->
+      <div id="stickyBlockEndPoint"></div>
+    <!-- End Sticky Block End Point -->
+
+    <!-- Modals -->
+      @@include("@@autopath/partials/layouts-components/modals/product.html")
+    <!-- End Modals -->
 
 </main>
   <!-- ========== END MAIN CONTENT ========== -->
@@ -364,6 +110,8 @@
   <!-- Go To -->
   @@include("@@autopath/partials/layouts-components/go-to.html")
   <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  
 
   <!-- JS Global Compulsory @@deleteLine:build -->
   <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
