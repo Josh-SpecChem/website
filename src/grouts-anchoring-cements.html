@@ -36,16 +36,11 @@
   <main id="content" role="main">
 
     <!-- Hero -->
-    <div class="bg-img-center" style="background-image: url(@@autopath/assets/img/specchem/products/grouts-and-anchoring-cements/hero/grouts-and-anchoring-cements-hero-fullscreen-dark.png">
-      <div class="container content-space-2 content-space-lg-3">
-        <div class="w-md-65 w-lg-50 mx-auto">
-          <div class="mb-4">
-            <h1 class="text-white text-cap-lg text-center">Grouts &amp; Anchoring Cements</h1>
-            <p class="lead text-white">Our cement-based, high performance, non-shrink grouts are developed to provide strength and durability in a variety of specialty applications. From general, high-strength, multi-purpose grouting to flowable, non-shrink, precision applications; from metallic grouts to pumpable, wash-out resistant grouts designed for underwater use, SpecChem has a grout formulated to exceed ASTM and CRD standards.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+      @@include("@@autopath/partials/layouts-components/heroes/category.html", {
+        "image": "@@autopath/assets/img/specchem/products/grouts-and-anchoring-cements/hero/grout-hero-fullscreen-dark.png",
+        "category": "Grouts &amp; Anchoring Cements",
+        "lead": "<p class=\"lead text-white\">Our cement-based, high performance, non-shrink grouts are developed to provide strength and durability in a variety of specialty applications. From general, high-strength, multi-purpose grouting to flowable, non-shrink, precision applications; from metallic grouts to pumpable, wash-out resistant grouts designed for underwater use, SpecChem has a grout formulated to exceed ASTM and CRD standards.</p>"
+      })
     <!-- End Hero -->
 
     <!-- Breadcrumb -->

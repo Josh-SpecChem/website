@@ -34,19 +34,14 @@
 
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
-
-    <!-- Hero -->
-    <div class="bg-img-center" style="background-image: url(@@autopath/assets/img/specchem/products/decorative-and-protective-sealers/hero/decorative-protective-sealers-hero-fullscreen-dark.png">
-      <div class="container content-space-2 content-space-lg-3">
-        <div class="w-md-65 w-lg-50 mx-auto">
-          <div class="mb-4">
-            <h1 class="text-white text-cap-lg text-center">Decorative &amp; Protective Sealers</h1>
-            <p class="lead text-white">Whatever your needs, Specchem has engineered a formula to add protection and durability to your exposed aggregate, natural stone, brick, quarry tile, terrazzo, and other concrete surfaces <strong>meeting the most stringent VOC regulations.</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Hero -->
+  
+  <!-- Hero -->
+    @@include("@@autopath/partials/layouts-components/heroes/category.html", {
+        "image": "@@autopath/assets/img/specchem/products/decorative-and-protective-sealers/hero/fullscreen-dark.png",
+        "category": "Decorative &amp; Protective Sealers",
+        "lead": "<p class=\"lead text-white\">Whatever your needs, Specchem has engineered a formula to add protection and durability to your exposed aggregate, natural stone, brick, quarry tile, terrazzo, and other concrete surfaces <strong>meeting the most stringent VOC regulations.</strong></p>"
+      })
+  <!-- End Hero -->
 
     <!-- Breadcrumb -->
     <div class="bg-light">
