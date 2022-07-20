@@ -36,16 +36,11 @@
   <main id="content" role="main">
 
     <!-- Hero -->
-    <div class="bg-img-center" style="background-image: url(@@autopath/assets/img/specchem/products/repair-mortars/hero/repair-mortars-hero-fullscreen-dark.png">
-      <div class="container content-space-2 content-space-lg-3">
-        <div class="w-md-65 w-lg-50 mx-auto">
-          <div class="mb-4">
-            <h1 class="text-white text-cap-lg text-center">Repair Mortars</h1>
-            <p class="lead text-white">Our system of concrete repair and restoration products is formulated for professionals who are serious about the repair, stabilization, restoration and strengthening of concrete projects. Our full line of professional concrete repair and restoration products features cementitious concrete patching and repair mortars – for horizontal, vertical, and overhead needs, self-leveling underlayments, polishing overlays, epoxies, and more.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+      @@include("@@autopath/partials/layouts-components/heroes/category.html", {
+        "image": "@@autopath/assets/img/specchem/products/repair-mortars/hero/repair-mortars-hero-fullscreen-dark.png",
+        "category": "Repair Mortars",
+        "lead": "<p class=\"lead text-white\">Our system of concrete repair and restoration products is formulated for professionals who are serious about the repair, stabilization, restoration and strengthening of concrete projects. Our full line of professional concrete repair and restoration products features cementitious concrete patching and repair mortars – for horizontal, vertical, and overhead needs, self-leveling underlayments, polishing overlays, epoxies, and more.</p>"
+      })
     <!-- End Hero -->
 
     <!-- Breadcrumb -->
