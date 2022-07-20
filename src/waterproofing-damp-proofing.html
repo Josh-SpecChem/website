@@ -36,16 +36,11 @@
   <main id="content" role="main">
 
     <!-- Hero -->
-    <div class="bg-img-center" style="background-image: url(@@autopath/assets/img/specchem/products/waterproofing-and-dampproofing/hero/waterproofing-and-dampproofing-hero-fullscreen-dark.png">
-      <div class="container content-space-2 content-space-lg-3">
-        <div class="w-md-65 w-lg-50 mx-auto">
-          <div class="mb-4">
-            <h1 class="text-white text-cap-lg text-center">Waterproofing & Damp-Proofing</h1>
-            <p class="lead text-white">Our Max-A-Guard line includes products designed to patch, repair, and protect asphalt surfaces, along with asphalt emulsion coatings for waterproofing, damp-proofing and protecting a variety of surfaces on exterior below grade and between-slab applications.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+      @@include("@@autopath/partials/layouts-components/heroes/category.html", {
+        "image": "@@autopath/assets/img/specchem/products/waterproofing-and-dampproofing/hero/waterproofing-hero-fullscreen-dark.png",
+        "category": "Waterproofing &amp; Damp-proofing",
+        "lead": "<p class=\"lead text-white\">Our Max-A-Guard line includes products designed to patch, repair, and protect asphalt surfaces, along with asphalt emulsion coatings for waterproofing, damp-proofing and protecting a variety of surfaces on exterior below grade and between-slab applications.</p>"
+      })
     <!-- End Hero -->
 
     <!-- Breadcrumb -->

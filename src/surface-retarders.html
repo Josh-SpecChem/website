@@ -36,16 +36,11 @@
   <main id="content" role="main">
 
     <!-- Hero -->
-    <div class="bg-img-center" style="background-image: url(@@autopath/assets/img/specchem/products/surface-retarders/hero/surface-retarders-hero-fullscreen-dark.png">
-      <div class="container content-space-2 content-space-lg-3">
-        <div class="w-md-65 w-lg-50 mx-auto">
-          <div class="mb-4">
-            <h1 class="text-white text-cap-lg text-center">Surface Retarders</h1>
-            <p class="lead text-white">Upgrade driveways, patios, walkways, pool decks, or any horizontal surfaces where you want to reveal the true beauty of decorative aggregate in concrete with SpecChem’s Surface Retarders. Our easy-to-use spray-applied products are specifically engineered to remove the surface of freshly placed concrete, exposing a remarkable aggregate finish that is both durable and skid-resistant.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+      @@include("@@autopath/partials/layouts-components/heroes/category.html", {
+        "image": "@@autopath/assets/img/specchem/products/surface-retarders/hero/surface-retarders-hero-fullscreen-dark.png",
+        "category": "Surface Retarders",
+        "lead": "<p class=\"lead text-white\">Upgrade driveways, patios, walkways, pool decks, or any horizontal surfaces where you want to reveal the true beauty of decorative aggregate in concrete with SpecChem’s Surface Retarders. Our easy-to-use spray-applied products are specifically engineered to remove the surface of freshly placed concrete, exposing a remarkable aggregate finish that is both durable and skid-resistant.</p>"
+      })
     <!-- End Hero -->
 
     <!-- Breadcrumb -->

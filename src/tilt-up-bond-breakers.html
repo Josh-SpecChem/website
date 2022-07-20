@@ -34,17 +34,13 @@
 
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
+    
     <!-- Hero -->
-    <div class="bg-img-center" style="background-image: url(@@autopath/assets/img/specchem/products/categories/bond-breaker-hero-dark.png">
-      <div class="container content-space-2 content-space-lg-3">
-        <div class="w-md-65 w-lg-35 mx-auto">
-          <div class="mb-4">
-            <h1 class="text-white text-cap-md text-center">Tilt-up Bond Breakers</h1>
-            <p class="lead text-white">SpecChem’s industry-leading tilt-up bond breaker products are chemically reactive and specifically engineered to provide clean and easy lift of tilt-up panels. Our bond breakers are formulated to leave no residue, stain, or discoloration, and contain no diesel, kerosene, waxes, or silicones.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+      @@include("@@autopath/partials/layouts-components/heroes/category.html", {
+        "image": "@@autopath/assets/img/specchem/products/tilt-up-bond-breakers/hero/bond-breaker-hero-dark.png",
+        "category": "Tilt-up Bond Breakers",
+        "lead": "<p class=\"lead text-white\">SpecChem’s industry-leading tilt-up bond breaker products are chemically reactive and specifically engineered to provide clean and easy lift of tilt-up panels. Our bond breakers are formulated to leave no residue, stain, or discoloration, and contain no diesel, kerosene, waxes, or silicones.</p>"
+      })
     <!-- End Hero -->
 
     <!-- Breadcrumb -->
