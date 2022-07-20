@@ -36,16 +36,11 @@
   <main id="content" role="main">
 
     <!-- Hero -->
-    <div class="bg-img-center" style="background-image: url(@@autopath/assets/img/specchem/products/categories/liquid-hardeners-hero-dark.png">
-      <div class="container content-space-2 content-space-lg-3">
-        <div class="w-md-65 w-lg-50 mx-auto">
-          <div class="mb-4">
-            <div class="text-white text-cap-lg text-center">Liquid Hardeners</div>
-            <p class="lead text-white">Our premium line of liquid hardeners and guards were created to provide the ultimate in densifying, hardening and protection for your concrete surfaces. Floors in factories, warehouses, schools, hospitals, breweries, food processing plants, service garages, and more will last longer, cost less to maintain, and resist dusting for years after application.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+      @@include("@@autopath/partials/layouts-components/heroes/category.html", {
+        "image": "@@autopath/assets/img/specchem/products/liquid-hardeners/hero/liquid-hardener-hero-fullscreen.png",
+        "category": "Liquid Hardeners",
+        "lead": "<p class=\"lead text-white\">Our premium line of liquid hardeners and guards were created to provide the ultimate in densifying, hardening and protection for your concrete surfaces. Floors in factories, warehouses, schools, hospitals, breweries, food processing plants, service garages, and more will last longer, cost less to maintain, and resist dusting for years after application.</p>"
+      })
     <!-- End Hero -->
 
     <!-- Breadcrumb -->

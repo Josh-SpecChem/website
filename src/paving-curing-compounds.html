@@ -36,16 +36,11 @@
   <main id="content" role="main">
 
     <!-- Hero -->
-    <div class="bg-img-center" style="background-image: url(@@autopath/assets/img/specchem/products/paving-curing-compounds/hero/paving-curing-compounds-hero-fullscreen-dark.png">
-      <div class="container content-space-2 content-space-lg-3">
-        <div class="w-md-65 w-lg-50 mx-auto">
-          <div class="mb-4">
-            <h1 class="text-white text-cap-lg text-center">Paving Curing Compounds</h1>
-            <p class="lead text-white">Applications ranging from highways, airports, bridge decks and parking lots to city streets, curbs and gutters, all require curing compounds formulated to cure for strong, durable concrete that meets and exceeds the ASTM C309 Standard Specification.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+      @@include("@@autopath/partials/layouts-components/heroes/category.html", {
+        "image": "@@autopath/assets/img/specchem/products/paving-curing-compounds/hero/paving-curing-compounds-fullscreen-hero-dark.png",
+        "category": "Paving Curing Compounds",
+        "lead": "<p class=\"lead text-white\">Applications ranging from highways, airports, bridge decks and parking lots to city streets, curbs and gutters, all require curing compounds formulated to cure for strong, durable concrete that meets and exceeds the ASTM C309 Standard Specification.</p>"
+      })
     <!-- End Hero -->
 
     <!-- Breadcrumb -->

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>PolyCure | Product Page</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/aos/dist/aos.css">
+  <link rel="stylesheet" href="./node_modules/tom-select/dist/css/tom-select.bootstrap5.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar/double-header-dark.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+      
+    <!-- Breadcrumb -->
+      @@include("@@autopath/partials/layouts-components/breadcrumbs/product.html", {
+        "category": "Curing Compounds and Cure & Sealers",
+        "category-link": "@@autopath/curing-compounds-and-cure-sealers.html",
+        "product": "PolyCure"
+      })
+    <!-- End Breadcrumb -->
+
+    <!-- Hero -->
+      @@include("@@autopath/partials/layouts-components/heroes/product.html", {
+        "product": "PolyCure",
+        "tagline": "25% solids solvent-based cure & seal",
+        "image": "@@autopath/assets/img/specchem/products/curing-compounds-and-cure-and-sealers/hero/fullscreen-dark.png"
+      })
+    <!-- End Hero -->
+
+    <!-- Data Sheets -->
+      @@include("@@autopath/partials/layouts-components/data-sheets/product-2.html", {
+        "techsheet": "@@autopath/assets/data-sheets/tech/polycure-tds.pdf",
+        "techtitle": "PolyCure Tech Sheet PDF",
+        "safetysheet": "@@autopath/assets/data-sheets/safety/polycure-sds.pdf",
+        "safetytitle": "PolyCure Safety Sheet PDF",
+      })
+    <!-- End Data Sheets -->
+
+    <!-- Sidebar -->
+      @@include("@@autopath/partials/layouts-components/product-sidebar/product-no-video.html", {
+          "available": "",
+          "productimage": "@@autopath/assets/img/specchem/products/curing-compounds-and-cure-and-sealers/800x800/polycure.png",
+          "cta-contact": "Ask a Curing Expert",
+        })
+    <!-- End Sidebar -->
+
+    <!-- Features & Benefits -->
+    <!-- End Features & Benefits -->
+          
+    <!-- Description -->
+      @@include("@@autopath/partials/layouts-components/description/product.html", {
+              "text": "<p class=\"text-lead\"><strong>PolyCure</strong> is a VOC-compliant newly engineered non-yellowing polymer solution to cure, seal, harden, and dustproof freshly placed concrete.</p><p class=\"text-lead\"><strong>PolyCure</strong> incorporates a new polymer technology that provides an effective cure and seal while offering a cost-effective alternative to standard acrylic cure & seals.</p><p class=\"text-lead\"><strong>PolyCure</strong> imparts a low-gloss finish to freshly placed concrete.</p><p class=\"text-lead\">Meets ASTM C1315, Type 1 and ASTM C309, Type 1, Classes A & B.</p><p class=\"text-lead\"><strong>PolyCure</strong> meets VOC emission requirements for curing and sealing compounds (EPA limit < 700 g/L).</p>"
+            })
+    <!-- End Description -->
+
+    <!-- Resources -->
+      @@include("@@autopath/partials/layouts-components/resources/curing-compounds-and-cure-and-sealers.html")
+    <!-- End Resources -->
+          
+    <!-- Sticky Block End Point -->
+      <div id="stickyBlockEndPoint"></div>
+    <!-- End Sticky Block End Point -->
+
+    <!-- Modals -->
+      @@include("@@autopath/partials/layouts-components/modals/product.html")
+    <!-- End Modals -->
+
+</main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/variant-5.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-sticky-block/dist/hs-sticky-block.min.js"></script>
+  <script src="@@autopath/node_modules/fslightbox/index.js"></script>
+  <script src="./node_modules/tom-select/dist/js/tom-select.complete.min.js"></script>
+  <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
+  <script src="../assets/js/hs.tom-select.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+
+      // INITIALIZATION OF BOOTSTRAP DROPDOWN
+      // =======================================================
+      HSBsDropdown.init()
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+      // INITIALIZATION OF SELECT
+    // =======================================================
+    HSCore.components.HSTomSelect.init('.js-select')
+
+
+      // INITIALIZATION OF STICKY BLOCKS
+      // =======================================================
+      new HSStickyBlock('.js-sticky-block', {
+        targetSelector: document.getElementById('header').classList.contains('navbar-fixed') ? '#header' : null
+      })
+
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
+    })()
+  </script>
+</body>
+</html>

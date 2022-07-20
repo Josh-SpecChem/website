@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Quartz Floor Hardener | Product Page</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/aos/dist/aos.css">
+  <link rel="stylesheet" href="./node_modules/tom-select/dist/css/tom-select.bootstrap5.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar/double-header-dark.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+      
+    <!-- Breadcrumb -->
+      @@include("@@autopath/partials/layouts-components/breadcrumbs/product.html", {
+        "category": "Dry Shake Hardeners & Toppings",
+        "category-link": "@@autopath/dry-shake-hardeners.html",
+        "product": "Quartz Floor Hardener"
+      })
+    <!-- End Breadcrumb -->
+
+    <!-- Hero -->
+      @@include("@@autopath/partials/layouts-components/heroes/product.html", {
+        "product": "Quartz Floor Hardener",
+        "tagline": "Non-metallic quartz dry-shake floor hardener",
+        "image": "@@autopath/assets/img/specchem/products/dry-shake-hardeners-and-toppings/hero/fullscreen-dark.png"
+      })
+    <!-- End Hero -->
+
+    <!-- Data Sheets -->
+      @@include("@@autopath/partials/layouts-components/data-sheets/product-3-spanish.html", {
+        "techsheet": "@@autopath/assets/data-sheets/tech/quartz-floor-hardener-tds.pdf",
+        "techtitle": "Quartz Floor Hardener Tech Sheet PDF",
+        "safetysheet": "@@autopath/assets/data-sheets/safety/quartz-floor-hardener-sds.pdf",
+        "safetytitle": "Quartz Floor Hardener Safety Sheet PDF",
+        "spanishsheet": "@@autopath/assets/data-sheets/spanish/quartz-floor-hardener-spanish.pdf",
+        "spanishtitle": "Quartz Floor Hardener Spanish Tech Sheet PDF",
+      })
+    <!-- End Data Sheets -->
+
+    <!-- Sidebar -->
+      @@include("@@autopath/partials/layouts-components/product-sidebar/product-no-video.html", {
+          "available": "Available in 50 lb. bags",
+          "productimage": "@@autopath/assets/img/specchem/products/dry-shake-hardeners-and-toppings/800x800/quartz-floor-hardener.png",
+          "cta-contact": "Ask a Dry Shake Expert",
+        })
+    <!-- End Sidebar -->
+
+    <!-- Features & Benefits -->
+      @@include("@@autopath/partials/layouts-components/features/product-7.html", {
+            "feature1": "Minimal surface dusting",
+            "feature2": "Non-fading, non-rusting colors (Light Reflective, Tile Red, French Gray, Battleship Gray, and Nile Green)",
+            "feature3": "Exterior/interior application",
+            "feature4": "Provides a high-density surface that resists liquid penetration and is easy to clean and maintain",
+            "feature5": "Increases impact and abrasion resistance up to four times that of plain concrete",
+            "feature6": "U.S.D.A. accepted for use in facilities where incidental contact with food products is possible",
+            "feature7": "Compliant with American Concrete Institute Standards: ACI 302, ACI 305, ACI 306"
+          })
+    <!-- End Features & Benefits -->
+          
+    <!-- Description -->
+      @@include("@@autopath/partials/layouts-components/description/product.html", {
+              "text": "<p class=\"text-lead\"><strong>Quartz Floor Hardener</strong> is a mixture of finely graded nonmetallic Quartz aggregates, plasticizer, and cement binder – an economical concrete floor hardener recommended for both interior and exterior use.</p><p class=\"text-lead\">When applied at the proper point in the concrete setting cycle, <strong>Quartz Floor Hardener</strong> is worked into the concrete to become an integral part of the floor to provide a surface that is highly resistant to abrasion.</p><p class=\"text-lead\"><strong>Quartz Floor Hardener</strong> is available in a natural concrete color in addition to a variety of other colors, including Light Reflective, Tile Red, French Gray, Battleship Gray, and Nile Green.</p>"
+            })
+    <!-- End Description -->
+
+    <!-- Resources -->
+      @@include("@@autopath/partials/layouts-components/resources/dry-shake-hardeners-and-toppings.html")
+    <!-- End Resources -->
+          
+    <!-- Sticky Block End Point -->
+      <div id="stickyBlockEndPoint"></div>
+    <!-- End Sticky Block End Point -->
+
+    <!-- Modals -->
+      @@include("@@autopath/partials/layouts-components/modals/product.html")
+    <!-- End Modals -->
+
+</main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/variant-5.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-sticky-block/dist/hs-sticky-block.min.js"></script>
+  <script src="@@autopath/node_modules/fslightbox/index.js"></script>
+  <script src="./node_modules/tom-select/dist/js/tom-select.complete.min.js"></script>
+  <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
+  <script src="../assets/js/hs.tom-select.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+
+
+      // INITIALIZATION OF BOOTSTRAP DROPDOWN
+      // =======================================================
+      HSBsDropdown.init()
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+      // INITIALIZATION OF SELECT
+    // =======================================================
+    HSCore.components.HSTomSelect.init('.js-select')
+
+
+      // INITIALIZATION OF STICKY BLOCKS
+      // =======================================================
+      new HSStickyBlock('.js-sticky-block', {
+        targetSelector: document.getElementById('header').classList.contains('navbar-fixed') ? '#header' : null
+      })
+
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
+    })()
+  </script>
+</body>
+</html>
