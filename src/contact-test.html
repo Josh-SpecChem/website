@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="noindex" />
+
+  <!-- Title -->
+  <title>Contact</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.themeFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="./node_modules/tom-select/dist/css/tom-select.bootstrap5.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="form.js"></script>
+
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar/double-header-dark.html")
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+
+    <div class="container content-space-3">
+
+      <!-- Contact Form -->
+        <div class="col">
+          <div class="mx-auto" style="max-width: 35rem;">
+            <!-- Card -->
+              <div class="card">
+                <div class="card-body">
+                  <!-- Heading -->
+                    <div class="text-center mb-5 mb-md-9">
+                     <h2>General Inquiries</h2>
+                      <p>Don't hesitate to reach out by phone, e-mail, or the form below for general product info, or to get in touch with a sales rep in your area.</p>
+                    </div>
+                  <!-- End Heading -->
+
+                <!-- Form -->
+                  <form id="contact-form" action="form-process.php" method="POST">
+                    <div class="row gx-3">
+                      
+                      <div class="col-sm-6">
+                        <div class="mb-3">
+                          <label class="form-label" for="hireUsFormFirstName">First name</label>
+                          <input type="text" class="form-control form-control-lg" name="hireUsFormNameFirstName" id="firstname" placeholder="First name" aria-label="First name">
+                        </div>
+                      </div>
+            
+
+                      <div class="col-sm-6">
+                        <div class="mb-3">
+                          <label class="form-label" for="hireUsFormLasttName">Last name</label>
+                          <input type="text" class="form-control form-control-lg" name="hireUsFormNameLastName" id="lastname" placeholder="Last name" aria-label="Last name">
+                        </div>
+                      </div>
+                   
+                    </div>
+                
+
+                    <div class="row gx-3">
+                    
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label class="form-label" for="hireUsFormWorkEmail">Email address</label>
+                        <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="email@site.com" aria-label="email@site.com">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label class="form-label" for="hireUsFormPhone">Phone <span class="form-label-secondary">(Optional)</span></label>
+                        <input type="text" class="form-control form-control-lg" name="phone" id="phone" placeholder="(###)###-####" aria-label="(###)###-####">
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+
+                    <div class="mb-3">
+                      <label class="form-label" for="hireUsFormDetails">Message</label>
+                      <textarea class="form-control form-control-lg" name="message" id="message" placeholder="How can we help?" aria-label="How can we help?" rows="4"></textarea>
+                    </div>
+                  <!-- End Form -->
+
+                  <div class="d-grid">
+                    <button type="submit" id="form-submit" class="btn btn-primary btn-lg" onclick="redirect();">Send</button>
+                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                  </div>
+
+                  <div class="text-center">
+                    <p class="form-text">We'll get back to you in 1-2 business days.</p>
+                  </div>
+                </form>
+              <!-- End Form -->
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+        </div>
+        <!-- End Contact Form -->
+      
+      </div>
+    </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/variant-5.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Sign Up -->
+  @@include("@@autopath/partials/modal/signup.html")
+  
+  <!-- Go To -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $("#contact-form").validator().on("submit", function (event) {
+    if (event.isDefaultPrevented()) {
+        // handle the invalid form...
+        formError();
+        submitMSG(false, "Did you fill in the form properly?");
+    } else {
+        // everything looks good!
+        event.preventDefault();
+        submitForm();
+    }
+});
+
+function submitForm(){
+    // Initiate Variables With Form Content
+    var firstname = $("#firstname").val();
+    var lastname = $("#lastname").val();
+    var email = $("#email").val();
+    var phone = $("#phone").val();
+    var message = $("#message").val();
+
+
+    $.ajax({
+        type: "POST",
+        url: "form-process.php",
+        data: "firstname=" + firstname + "&lastname=" + lastname + "&email=" + email + "&phone=" + phone + "&message=" + message,
+        success : function(text){
+            if (text == "success"){
+                formSuccess();
+            } else {
+                formError();
+                submitMSG(false,text);
+            }
+        }
+    });
+}
+
+function formSuccess(){
+    $("#contact-form")[0].reset();
+    submitMSG(true, "Message Submitted!")
+}
+
+function formError(){
+    $("#contact-form").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).removeClass();
+    });
+}
+
+function submitMSG(valid, msg){
+    if(valid){
+        var msgClasses = "h3 text-center tada animated text-success";
+    } else {
+        var msgClasses = "h3 text-center text-danger";
+    }
+    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+}
+  </script>
+</body>
+</html>

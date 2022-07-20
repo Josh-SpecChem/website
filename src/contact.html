@@ -36,133 +36,126 @@
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
 
-      <div class="container content-space-3">
-        
-        <!-- Hero -->
+    <div class="container content-space-3">
+
+      <!-- Hero -->
         <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
           <h1>Contact us</h1>
           <p>We'd love to talk about how we can help you.</p>
         </div>
-        <!-- End Hero -->
+      <!-- End Hero -->
 
-          <div class="row">
+      <div class="row">
 
-            <div class="col-md-6">
-              <!-- Leaflet -->
-              <div class="container-fluid mb-3">
-                <div class="overflow-hidden">
-                  <div id="map" class="leaflet"
-                       data-hs-leaflet-options='{
-                       "map": {
-                         "scrollWheelZoom": false,
-                         "coords": [39.0956786,-94.5844298]
-                       },
-                       "marker": [
-                         {
-                           "coords": [39.0956786,-94.5844298],
-                           "icon": {
-                             "iconUrl": "@@autopath/assets/svg/components/map-pin.svg",
-                             "iconSize": [50, 45]
-                           },
-                           "popup": {
-                             "text": "1511 Baltimore Avenue, Kansas City, MO"
-                           }
+        <!-- Leaflet -->
+          <div class="col-md-6">
+            <div class="container-fluid mb-3">
+              <div class="overflow-hidden">
+                <div id="map" class="leaflet"
+                     data-hs-leaflet-options='{
+                     "map": {
+                       "scrollWheelZoom": false,
+                       "coords": [39.0956786,-94.5844298]
+                     },
+                     "marker": [
+                       {
+                         "coords": [39.0956786,-94.5844298],
+                         "icon": {
+                           "iconUrl": "@@autopath/assets/svg/components/map-pin.svg",
+                           "iconSize": [50, 45]
+                         },
+                         "popup": {
+                           "text": "1511 Baltimore Avenue, Kansas City, MO"
                          }
-                       ]
-                      }'>
-                        
-                  </div>
+                       }
+                     ]
+                    }'>
+                      
                 </div>
               </div>
-              <!-- End Leaflet -->
             </div>
+          </div>
+        <!-- End Leaflet -->
 
-            <!-- Contact Form -->
-            <div class="col-md-6">
-              <div class="mx-auto" style="max-width: 35rem;">
-                <!-- Card -->
+        <!-- Contact Form -->
+          <div class="col-md-6">
+            <div class="mx-auto" style="max-width: 35rem;">
+              <!-- Card -->
                 <div class="card">
                   <div class="card-body">
                     <!-- Heading -->
-                    <div class="text-center mb-5 mb-md-9">
-                      <h2>General Inquiries</h2>
-                      <p>Don't hesitate to reach out by phone, e-mail, or the form below for general product info, or to get in touch with a sales rep in your area.</p>
-                    </div>
+                      <div class="text-center mb-5 mb-md-9">
+                       <h2>General Inquiries</h2>
+                        <p>Don't hesitate to reach out by phone, e-mail, or the form below for general product info, or to get in touch with a sales rep in your area.</p>
+                      </div>
                     <!-- End Heading -->
 
-                    <!-- Form -->
+                  <!-- Form -->
                     <form id="contact-form">
                       <div class="row gx-3">
+                        
                         <div class="col-sm-6">
-                          <!-- Form -->
                           <div class="mb-3">
                             <label class="form-label" for="hireUsFormFirstName">First name</label>
                             <input type="text" class="form-control form-control-lg" name="hireUsFormNameFirstName" id="firstname" placeholder="First name" aria-label="First name">
                           </div>
-                          <!-- End Form -->
                         </div>
-                        <!-- End Col -->
+              
 
                         <div class="col-sm-6">
-                          <!-- Form -->
                           <div class="mb-3">
                             <label class="form-label" for="hireUsFormLasttName">Last name</label>
                             <input type="text" class="form-control form-control-lg" name="hireUsFormNameLastName" id="lastname" placeholder="Last name" aria-label="Last name">
                           </div>
-                          <!-- End Form -->
                         </div>
-                        <!-- End Col -->
+                     
                       </div>
-                      <!-- End Row -->
+                  
 
                       <div class="row gx-3">
-                        <div class="col-sm-6">
-                          <!-- Form -->
-                          <div class="mb-3">
-                            <label class="form-label" for="hireUsFormWorkEmail">Email address</label>
-                            <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="email@site.com" aria-label="email@site.com">
-                          </div>
-                          <!-- End Form -->
+                      
+                      <div class="col-sm-6">
+                        <div class="mb-3">
+                          <label class="form-label" for="hireUsFormWorkEmail">Email address</label>
+                          <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="email@site.com" aria-label="email@site.com">
                         </div>
-                        <!-- End Col -->
-
-                        <div class="col-sm-6">
-                          <!-- Form -->
-                          <div class="mb-3">
-                            <label class="form-label" for="hireUsFormPhone">Phone <span class="form-label-secondary">(Optional)</span></label>
-                            <input type="text" class="form-control form-control-lg" name="phone" id="phone" placeholder="(###)###-####" aria-label="(###)###-####">
-                          </div>
-                          <!-- End Form -->
-                        </div>
-                        <!-- End Col -->
                       </div>
-                      <!-- End Row -->
 
-                      <!-- Form -->
+                      <div class="col-sm-6">
+                        <div class="mb-3">
+                          <label class="form-label" for="hireUsFormPhone">Phone <span class="form-label-secondary">(Optional)</span></label>
+                          <input type="text" class="form-control form-control-lg" name="phone" id="phone" placeholder="(###)###-####" aria-label="(###)###-####">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    
+
                       <div class="mb-3">
                         <label class="form-label" for="hireUsFormDetails">Message</label>
                         <textarea class="form-control form-control-lg" name="message" id="message" placeholder="How can we help?" aria-label="How can we help?" rows="4"></textarea>
                       </div>
-                      <!-- End Form -->
-
-                      <div class="d-grid">
-                        <button type="submit" id="form-submit" class="btn btn-primary btn-lg">Send</button>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                      </div>
-
-                      <div class="text-center">
-                        <p class="form-text">We'll get back to you in 1-2 business days.</p>
-                      </div>
-                    </form>
                     <!-- End Form -->
-                  </div>
+
+                    <div class="d-grid">
+                      <button type="submit" id="form-submit" class="btn btn-primary btn-lg">Send</button>
+                      <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    </div>
+
+                    <div class="text-center">
+                      <p class="form-text">We'll get back to you in 1-2 business days.</p>
+                    </div>
+                  </form>
+                <!-- End Form -->
                 </div>
-                <!-- End Card -->
               </div>
+              <!-- End Card -->
             </div>
-            <!-- End Contact Form -->
           </div>
-        </div>
+        <!-- End Contact Form -->
+      
+      </div>
+    </div>
 
         <div class="container content-space-1">
         <div class="row">
@@ -234,7 +227,7 @@
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- ========== FOOTER ========== -->
-  @@include("@@autopath/partials/footer/main-dark-sc.html")
+  @@include("@@autopath/partials/footer/variant-5.html")
   <!-- ========== END FOOTER ========== -->
 
   <!-- ========== SECONDARY CONTENTS ========== -->

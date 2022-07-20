@@ -4,9 +4,10 @@
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="noindex" />
 
   <!-- Title -->
-  <title>Cure & Seal WB | Product Page</title>
+  <title>Berry Clean | Product Page</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -36,59 +37,56 @@
       
     <!-- Breadcrumb -->
       @@include("@@autopath/partials/layouts-components/breadcrumbs/product.html", {
-        "category": "Curing Compounds and Cure & Sealers",
-        "category-link": "@@autopath/curing-compounds-and-cure-sealers.html",
-        "product": "Cure & Seal WB"
+        "category": "Cleaners & Strippers",
+        "category-link": "@@autopath/cleaners-strippers.html",
+        "product": "Berry Clean"
       })
     <!-- End Breadcrumb -->
 
     <!-- Hero -->
       @@include("@@autopath/partials/layouts-components/heroes/product.html", {
-        "product": "Cure & Seal WB",
-        "tagline": "ASTM C-309 compliant water-based cure & seal",
-        "image": "@@autopath/assets/img/specchem/products/curing-compounds-and-cure-and-sealers/hero/fullscreen-dark.png"
+        "product": "Berry Clean",
+        "tagline": "Raspberry scented solvent/cleaner/degreaser",
+        "image": "@@autopath/assets/img/specchem/products/cleaners-and-strippers/hero/fullscreen-dark.png"
       })
     <!-- End Hero -->
 
     <!-- Data Sheets -->
-      @@include("@@autopath/partials/layouts-components/data-sheets/product-3-spanish.html", {
-        "techsheet": "@@autopath/assets/data-sheets/tech/cure-seal-wb-tds.pdf",
-        "techtitle": "Cure & Seal WB Tech Sheet PDF",
-        "safetysheet": "@@autopath/assets/data-sheets/safety/cure-seal-wb-sds.pdf",
-        "safetytitle": "Cure & Seal WB Safety Sheet PDF",
-        "spanishsheet": "@@autopath/assets/data-sheets/spanish/cure-seal-wb-spanish.pdf",
-        "spanishtitle": "Cure & Seal WB Spanish Tech Sheet PDF",
+      @@include("@@autopath/partials/layouts-components/data-sheets/product-2.html", {
+        "techsheet": "@@autopath/assets/data-sheets/tech/berry-clean-tds.pdf",
+        "techtitle": "Berry Clean Tech Sheet PDF",
+        "safetysheet": "@@autopath/assets/data-sheets/safety/berry-clean-sds.pdf",
+        "safetytitle": "Berry Clean Safety Sheet PDF",
       })
     <!-- End Data Sheets -->
 
     <!-- Sidebar -->
-      @@include("@@autopath/partials/layouts-components/product-sidebar/product-video.html", {
-          "available": "Available in 5 or 55 gal units",
-          "video": "https://www.youtube.com/watch?v=9StI1KtR6b0",
-          "productimage": "@@autopath/assets/img/specchem/products/curing-compounds-and-cure-and-sealers/800x800/cure-seal-wb.png",
-          "cta-contact": "Ask a Curing Expert",
+      @@include("@@autopath/partials/layouts-components/product-sidebar/product-no-video.html", {
+          "available": "Available in 1, 5, or 55 gal units",
+          "productimage": "@@autopath/assets/img/specchem/products/cleaners-and-strippers/800x800/berry-clean.png",
+          "cta-contact": "Ask a Cleaning Expert",
         })
     <!-- End Sidebar -->
 
     <!-- Features & Benefits -->
       @@include("@@autopath/partials/layouts-components/features/product-6.html", {
-            "feature1": "Cleans and brightens floors",
-            "feature2": "Can be recoated at any time without stripping the prior application",
-            "feature3": "Reduces maintenance and clean-up costs",
-            "feature4": "Provides a tough glossy film that is resistant to abrasion and common staining materials",
-            "feature5": "Can be recoated prior to occupancy for a glossy final finish",
-            "feature6": "Prevents the adhesion of cementitious droppings and the penetration of most oils and greases"
+            "feature1": "Cost-effective",
+            "feature2": "Meets stringent VOC for SCAQMD/OTC/CA/VA (with less than 25 grams/liter)",
+            "feature3": "Pleasant raspberry scent",
+            "feature4": "Removes residual acrylic & resin curing compounds",
+            "feature5": "Complies with all national VOC Regulations",
+            "feature6": "Water dispersible for easy clean-up and versatility"
           })
     <!-- End Features & Benefits -->
           
     <!-- Description -->
       @@include("@@autopath/partials/layouts-components/description/product.html", {
-              "text": "<p class=\"text-lead\"><strong>Cure & Seal WB</strong> is a water-based, non-yellowing, VOC-compliant acrylic polymer engineered to cure, seal, harden, and dustproof freshly placed concrete and improve the wearability and durability of aged concrete surfaces. May contribute to LEED credits.</p>"
+              "text": "<p class=\"text-lead\"><strong>Berry Clean</strong> will effectively remove grease, grime, many types of carpet/tile cutback adhesives, and other contaminants from architectural concrete and other surfaces – will also remove acrylic and resin concrete curing compounds from concrete surfaces.</p><p class=\"text-lead\"><strong>Berry Clean</strong> can be diluted in water to offer added versatility and can eliminate the need to stock multiple cleaners.</p><p class=\"text-lead\"><strong>Berry Clean</strong> is VOC-compliant (less than 25 grams/liter) – standard harsh cleaners and degreasers are high in VOCs and restricted from use in many parts of the country.</p>"
             })
     <!-- End Description -->
 
     <!-- Resources -->
-      @@include("@@autopath/partials/layouts-components/resources/curing-compounds-and-cure-and-sealers.html")
+      @@include("@@autopath/partials/layouts-components/resources/cleaners-and-strippers.html")
     <!-- End Resources -->
           
     <!-- Sticky Block End Point -->
@@ -125,6 +123,7 @@
   <script src="@@autopath/node_modules/fslightbox/index.js"></script>
   <script src="./node_modules/tom-select/dist/js/tom-select.complete.min.js"></script>
   <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
+  <script src="../assets/vendor/hs-video-player/dist/hs-video-player.min.js"></script>
 
   <!-- JS Front -->
   <!-- bundlejs:theme [@@autopath] -->
@@ -157,6 +156,10 @@
       // INITIALIZATION OF GO TO
       // =======================================================
       new HSGoTo('.js-go-to')
+
+      // INITIALIZATION OF VIDEO PLAYER
+    // =======================================================
+    new HSVideoPlayer('.js-inline-video-player')
 
       // INITIALIZATION OF SELECT
     // =======================================================
