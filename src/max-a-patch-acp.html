@@ -66,7 +66,7 @@
       @@include("@@autopath/partials/layouts-components/product-sidebar/product-video.html", {
           "available": "Available in 50 lb. bags",
           "video": "https://www.youtube.com/watch?v=EqDK-lU67Zw",
-          "productimage": "@@autopath/assets/img/specchem/products/waterproofing-and-damp-proofing/800x800/max-a-patch-acp.png",
+          "productimage": "@@autopath/assets/img/specchem/products/waterproofing-and-dampproofing/800x800/max-a-patch-acp.png",
           "cta-contact": "Ask a Waterproofing Expert",
         })
     <!-- End Sidebar -->
@@ -106,7 +106,7 @@
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- ========== FOOTER ========== -->
-  @@include("@@autopath/partials/footer/variant-5.html")
+  @@include("@@autopath/partials/footer/footer.html")
   <!-- ========== END FOOTER ========== -->
 
   <!-- ========== SECONDARY CONTENTS ========== -->
@@ -128,6 +128,8 @@
   <script src="@@autopath/node_modules/fslightbox/index.js"></script>
   <script src="./node_modules/tom-select/dist/js/tom-select.complete.min.js"></script>
   <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
+  <script src="@@autopath/assets/vendor/hs-video-player/dist/hs-video-player.min.js"></script>
+
 
   <!-- JS Front -->
   <!-- bundlejs:theme [@@autopath] -->
@@ -164,6 +166,10 @@
       // INITIALIZATION OF SELECT
     // =======================================================
     HSCore.components.HSTomSelect.init('.js-select')
+
+    // INITIALIZATION OF VIDEO PLAYER
+      // =======================================================
+      new HSVideoPlayer('.js-inline-video-player')
 
 
       // INITIALIZATION OF STICKY BLOCKS

@@ -108,7 +108,7 @@
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- ========== FOOTER ========== -->
-  @@include("@@autopath/partials/footer/variant-5.html")
+  @@include("@@autopath/partials/footer/footer.html")
   <!-- ========== END FOOTER ========== -->
 
   <!-- ========== SECONDARY CONTENTS ========== -->
@@ -130,6 +130,7 @@
   <script src="@@autopath/node_modules/fslightbox/index.js"></script>
   <script src="./node_modules/tom-select/dist/js/tom-select.complete.min.js"></script>
   <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
+  <script src="@@autopath/assets/vendor/hs-video-player/dist/hs-video-player.min.js"></script>
 
   <!-- JS Front -->
   <!-- bundlejs:theme [@@autopath] -->
@@ -173,6 +174,10 @@
       new HSStickyBlock('.js-sticky-block', {
         targetSelector: document.getElementById('header').classList.contains('navbar-fixed') ? '#header' : null
       })
+
+      // INITIALIZATION OF VIDEO PLAYER
+      // =======================================================
+      new HSVideoPlayer('.js-inline-video-player')
 
       // INITIALIZATION OF AOS
       // =======================================================
