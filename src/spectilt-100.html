@@ -66,7 +66,7 @@
       @@include("@@autopath/partials/layouts-components/product-sidebar/product-video.html", {
           "available": "Available in 5 or 55 gal units",
           "video": "https://www.youtube.com/watch?v=vDld69In4h0",
-          "productimage": "@@autopath/assets/img/specchem/products/tilt-up-bond-breaker/800x800/spectilt-100.png",
+          "productimage": "@@autopath/assets/img/specchem/products/tilt-up-bond-breakers/800x800/spectilt-100.png",
           "cta-contact": "Ask a Tilt-up Expert",
         })
     <!-- End Sidebar -->
@@ -102,7 +102,7 @@
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- ========== FOOTER ========== -->
-  @@include("@@autopath/partials/footer/variant-5.html")
+  @@include("@@autopath/partials/footer/footer.html")
   <!-- ========== END FOOTER ========== -->
 
   <!-- ========== SECONDARY CONTENTS ========== -->
@@ -124,6 +124,7 @@
   <script src="@@autopath/node_modules/fslightbox/index.js"></script>
   <script src="./node_modules/tom-select/dist/js/tom-select.complete.min.js"></script>
   <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
+  <script src="@@autopath/assets/vendor/hs-video-player/dist/hs-video-player.min.js"></script>
 
   <!-- JS Front -->
   <!-- bundlejs:theme [@@autopath] -->
@@ -160,6 +161,10 @@
       // INITIALIZATION OF SELECT
     // =======================================================
     HSCore.components.HSTomSelect.init('.js-select')
+
+    // INITIALIZATION OF VIDEO PLAYER
+      // =======================================================
+      new HSVideoPlayer('.js-inline-video-player')
 
 
       // INITIALIZATION OF STICKY BLOCKS
