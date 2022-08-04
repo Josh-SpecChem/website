@@ -1,0 +1,43 @@
+<div class="container-fluid content-space-2 px-5">
+  <div class="row">
+    <div class="col-md-7 col-lg-8">
+      <h3 class="mb-4 display-6">Resources</h3>
+
+      <!-- Nav -->
+        <div class="">
+          <ul class="nav nav-segment nav-pills mb-7 nav-fill" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-one-eg1-tab" href="#nav-one-eg1" data-bs-toggle="pill" data-bs-target="#nav-one-eg1" role="tab" aria-controls="nav-one-eg1" aria-selected="true">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-two-eg1-tab" href="#nav-two-eg1" data-bs-toggle="pill" data-bs-target="#nav-two-eg1" role="tab" aria-controls="nav-two-eg1" aria-selected="false">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-three-eg1-tab" href="#nav-three-eg1" data-bs-toggle="pill" data-bs-target="#nav-three-eg1" role="tab" aria-controls="nav-three-eg1" aria-selected="false">System</a>
+            </li>
+          </ul>
+        </div>
+      <!-- End Nav -->
+
+      <!-- Tab Content -->
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="nav-one-eg1" role="tabpanel" aria-labelledby="nav-one-eg1-tab">
+            <div>
+              @@include("../tables/crossover/form-release.html")
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-two-eg1" role="tabpanel" aria-labelledby="nav-two-eg1-tab">
+            @@include("../galleries/form-release-agents-and-form-treatment.html")
+          </div>
+
+          <div class="tab-pane fade" id="nav-three-eg1" role="tabpanel" aria-labelledby="nav-three-eg1-tab">
+            @@include("../systems/precast-system.html")
+            <br>
+            @@include("../systems/aluminum-forming-system.html")
+          </div>
+        </div>
+      <!-- End Tab Content -->
+    </div>
+  </div>
+</div>
